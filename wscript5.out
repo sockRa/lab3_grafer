@@ -1,0 +1,258 @@
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  d
+ The graph is empty 
+ Enter choice ==>  m
+ The graph is empty 
+ Enter choice ==>  r
+ The graph is empty 
+ Enter choice ==>  s
+ The graph is empty 
+ Enter choice ==>  n
+ The graph is empty 
+ Enter choice ==>  e
+ The graph is empty 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 0 edges): 
+
+ a : 
+ b : 
+ c : 
+ d : 
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   *   *   * 
+  b:   *   *   *   * 
+  c:   *   *   *   * 
+  d:   *   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  2
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  3
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  4
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  n Enter node:  a
+ Node a found in graph 
+ Enter choice ==>  n Enter node:  b
+ Node b found in graph 
+ Enter choice ==>  n Enter node:  c
+ Node c found in graph 
+ Enter choice ==>  n Enter node:  d
+ Node d found in graph 
+ Enter choice ==>  n Enter node:  e
+ Node e NOT found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  b
+ Edge (a, b) found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  c
+ Edge (a, c) found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  d
+ Edge (a, d) found in graph 
+ Enter choice ==>  e Enter node:  c Enter node:  d
+ Edge (c, d) NOT found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  e Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  a Enter node:  a
+ *** ERROR Node a already exists! 
+ Enter choice ==>  a Enter node:  b
+ *** ERROR Node b already exists! 
+ Enter choice ==>  a Enter node:  c
+ *** ERROR Node c already exists! 
+ Enter choice ==>  a Enter node:  d
+ *** ERROR Node d already exists! 
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4   * 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  b Enter node:  a Enter node:  b
+ *** ERROR Edge (a, b) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  c
+ *** ERROR Edge (a, c) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  d
+ *** ERROR Edge (a, d) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  e Enter weight:  11
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 8 edges): 
+
+ a :  b( 2) c( 3) d( 4) e(11)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e :  a(11)
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4  11 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:  11   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  s Enter node:  a Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  s Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  s Enter node:  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4   * 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  r Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 

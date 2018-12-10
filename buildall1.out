@@ -1,0 +1,17 @@
+*** tests starting
+*** compiling modules: frontend
+*** compiling modules: backend
+*** Build and Test: saving previous output
+*** Build and Test: compiling system
+*** Build and Test: running script1
+*** Build and Test: running script2
+*** Build and Test: running script3
+*** Build and Test: running script4
+*** Build and Test: running script5
+*** Build and Test: comparing output script1 (diff)
+*** Build and Test: comparing output script2 (diff)
+*** Build and Test: comparing output script3 (diff)
+*** Build and Test: comparing output script4 (diff)
+*** Build and Test: comparing output script5 (diff)
+*** cleaning up ...
+...tests finished

@@ -1,0 +1,134 @@
+
+echo "*** tests starting"
+
+echo "*** compiling modules: frontend"
+gcc -Wall -c Dmenu.c
+gcc -Wall -c uimenu.c
+gcc -Wall -c fegraph.c
+
+echo "*** compiling modules: backend"
+gcc -Wall -c begraph.c
+
+echo "*** Build and Test: saving previous output"
+
+cp script1.out script1.old
+cp script2.out script2.old
+cp script3.out script3.old
+cp script4.out script4.old
+cp script5.out script5.old
+
+cp dgraph0.out dgraph0.old
+cp dgraph1.out dgraph1.old
+cp dgraph2.out dgraph2.old
+cp dgraph3.out dgraph3.old
+cp dgraph4.out dgraph4.old
+cp dgraph5.out dgraph5.old
+
+cp ugraph0.out ugraph0.old
+cp ugraph1.out ugraph1.old
+cp ugraph2.out ugraph2.old
+cp ugraph3.out ugraph3.old
+cp ugraph4.out ugraph4.old
+cp ugraph5.out ugraph5.old
+cp ugraph6.out ugraph6.old
+
+
+echo "*** Build and Test: compiling system"
+gcc -Wall Dmenu.c uimenu.c fegraph.c begraph.c -o graph
+echo "*** Build and Test: running script1"
+./graph < script1 > script1.out
+echo "*** Build and Test: running script2"
+./graph < script2 > script2.out
+echo "*** Build and Test: running script3"
+./graph < script3 > script3.out
+echo "*** Build and Test: running script4"
+./graph < script4 > script4.out
+echo "*** Build and Test: running script5"
+./graph < script5 > script5.out
+
+cp script1.out wscript1.out
+cp script2.out wscript2.out
+cp script3.out wscript3.out
+cp script4.out wscript4.out
+cp script5.out wscript5.out
+
+echo "*** Build and Test: running dgraph0"
+./graph < dgraph0> dgraph0.out
+echo "*** Build and Test: running dgraph1"
+./graph < dgraph1> dgraph1.out
+echo "*** Build and Test: running dgraph2"
+./graph < dgraph2> dgraph2.out
+echo "*** Build and Test: running dgraph3"
+./graph < dgraph3> dgraph3.out
+echo "*** Build and Test: running dgraph4"
+./graph < dgraph4> dgraph4.out
+echo "*** Build and Test: running dgraph5"
+./graph < dgraph5> dgraph5.out
+
+
+echo "*** Build and Test: running ugraph0"
+./graph < ugraph0> ugraph0.out
+echo "*** Build and Test: running ugraph1"
+./graph < ugraph1> ugraph1.out
+echo "*** Build and Test: running ugraph2"
+./graph < ugraph2> ugraph2.out
+echo "*** Build and Test: running ugraph3"
+./graph < ugraph3> ugraph3.out
+echo "*** Build and Test: running ugraph4"
+./graph < ugraph4> ugraph4.out
+echo "*** Build and Test: running ugraph5"
+./graph < ugraph5> ugraph5.out
+echo "*** Build and Test: running ugraph6"
+./graph < ugraph6> ugraph6.out
+
+
+echo "*** Build and Test: comparing output script1 (diff)"
+diff script1.old script1.out
+echo "*** Build and Test: comparing output script2 (diff)"
+diff script2.old script2.out
+echo "*** Build and Test: comparing output script3 (diff)"
+diff script3.old script3.out
+echo "*** Build and Test: comparing output script4 (diff)"
+diff script4.old script4.out
+echo "*** Build and Test: comparing output script5 (diff)"
+diff script5.old script5.out
+
+
+echo "*** Build and Test: comparing output dgraph0 (diff)"
+diff dgraph0.old dgraph0.out
+echo "*** Build and Test: comparing output dgraph1 (diff)"
+diff dgraph1.old dgraph1.out
+echo "*** Build and Test: comparing output dgraph2 (diff)"
+diff dgraph2.old dgraph2.out
+echo "*** Build and Test: comparing output dgraph3 (diff)"
+diff dgraph3.old dgraph3.out
+echo "*** Build and Test: comparing output dgraph4 (diff)"
+diff dgraph4.old dgraph4.out
+echo "*** Build and Test: comparing output dgraph5 (diff)"
+diff dgraph5.old dgraph5.out
+
+
+echo "*** Build and Test: comparing output ugraph0 (diff)"
+diff ugraph0.old ugraph0.out
+echo "*** Build and Test: comparing output ugraph1 (diff)"
+diff ugraph1.old ugraph1.out
+echo "*** Build and Test: comparing output ugraph2 (diff)"
+diff ugraph2.old ugraph2.out
+echo "*** Build and Test: comparing output ugraph3 (diff)"
+diff ugraph3.old ugraph3.out
+echo "*** Build and Test: comparing output ugraph4 (diff)"
+diff ugraph4.old ugraph4.out
+echo "*** Build and Test: comparing output ugraph5 (diff)"
+diff ugraph5.old ugraph5.out
+echo "*** Build and Test: comparing output ugraph6 (diff)"
+diff ugraph6.old ugraph6.out
+
+cat script*.out > ScriptAll.out
+cat script*.out dgraph*.out ugraph*.out > GraphAll.out
+
+echo "*** cleaning up ..."
+rm *.o 
+
+echo "...tests finished"
+
+
