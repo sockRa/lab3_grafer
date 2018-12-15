@@ -120,7 +120,9 @@ static void b_ndisp(noderef G) {
 /****************************************************************************/
 static noderef b_addn(char c, noderef G)
 {
-  printf("\n TO BE DONE "); return NULLREF;
+   return is_empty(G)   ?  create_n(c,0)
+   :  c < get_nname(G)  ?  ncons(create_n(c,0),G)
+   :  ncons(G,b_addn(c,ntail(G)));
 }
 
 /****************************************************************************/
@@ -128,7 +130,11 @@ static noderef b_addn(char c, noderef G)
 /****************************************************************************/
 static noderef b_adde(char c, int w, noderef E)
 {
-  printf("\n TO BE DONE "); return NULLREF;
+   //No auto-sort
+   return is_empty(E)   ?  create_n(c,w)
+   : c < get_nname(E)   ?  econs(E,econs(create_n(c,w), etail(E)))
+   : econs(E,b_adde(c,w,etail(E)));  
+   
 }
 
 /****************************************************************************/
@@ -136,7 +142,25 @@ static noderef b_adde(char c, int w, noderef E)
 /****************************************************************************/
 static noderef b_remn(char c, noderef G) {
 
-    printf("\n TO BE DONE "); return NULLREF;
+   noderef parent = NULLREF;  
+   noderef tempEdge = NULLREF;
+   while(c != get_nname(G)){
+      parent = G;
+      G = ntail(G);
+   }
+
+   tempEdge = get_edges(G);
+
+   while(!is_empty(tempEdge)){
+
+      set_edges(tempEdge,NULLREF);
+      tempEdge = get_edges(etail(tempEdge));
+   }
+
+   ncons(parent,ntail(G));
+   ncons(G,NULLREF);
+   
+   return parent;
 }
 
 /****************************************************************************/
@@ -159,7 +183,9 @@ static void b_remalle(char c, noderef G) {
 /* FIND a  node in the graph                                                */
 /****************************************************************************/
 static noderef b_findn(char c, noderef G) {
-   printf("\n TO BE DONE "); return NULLREF;
+   return is_empty(G)   ?  NULLREF
+   :  c > get_nname(G)  ?  b_findn(c,ntail(G))
+   :  G;   
 }
 
 /****************************************************************************/
@@ -172,7 +198,7 @@ static noderef b_finde(char c, noderef E) {
 /****************************************************************************/
 /* FIND the number of nodes in the graph (cardinality nodes)                */
 /****************************************************************************/
-static int b_nsize(noderef G) { printf("\n TO BE DONE "); return 0;}
+static int b_nsize(noderef G) {return is_empty(G) ? 0 : 1 + b_nsize(ntail(G));}
 
 /****************************************************************************/
 /* FIND the number of edges in the graph (cardinality edges)                */
