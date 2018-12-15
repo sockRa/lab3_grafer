@@ -142,25 +142,24 @@ static noderef b_adde(char c, int w, noderef E)
 /****************************************************************************/
 static noderef b_remn(char c, noderef G) {
 
-   noderef parent = NULLREF;  
-   noderef tempEdge = NULLREF;
-   while(c != get_nname(G)){
-      parent = G;
-      G = ntail(G);
+   noderef temp = G;
+   noderef parent = NULLREF;
+
+   if(c == get_nname(temp)){
+      G = ntail(temp);
+      free(temp);
+      return G;
    }
-
-   tempEdge = get_edges(G);
-
-   while(!is_empty(tempEdge)){
-
-      set_edges(tempEdge,NULLREF);
-      tempEdge = get_edges(etail(tempEdge));
-   }
-
-   ncons(parent,ntail(G));
-   ncons(G,NULLREF);
    
-   return parent;
+   while(c != get_nname(temp)){
+      parent = temp;
+      temp = ntail(temp);
+   }
+
+   ncons(parent,ntail(temp));
+   free(temp);
+   return G;
+
 }
 
 /****************************************************************************/
@@ -168,7 +167,7 @@ static noderef b_remn(char c, noderef G) {
 /****************************************************************************/
 static noderef b_reme(char c, noderef E) {
 
-    printf("\n TO BE DONE "); return NULLREF;
+   printf("\n TO BE DONE "); return NULLREF;
 }
 
 /****************************************************************************/
