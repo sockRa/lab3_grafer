@@ -167,7 +167,22 @@ static noderef b_remn(char c, noderef G) {
 /****************************************************************************/
 static noderef b_reme(char c, noderef E) {
 
-   printf("\n TO BE DONE "); return NULLREF;
+   noderef temp = E;
+   noderef parent = NULLREF;
+
+   if(c == get_nname(temp)){
+      E = etail(temp);
+      free(temp);
+      return E;
+   }
+
+   while(c != get_nname(temp)){
+      parent = temp;
+      temp = etail(temp);
+   }
+   econs(parent,etail(temp));
+   free(temp);
+   return E;
 }
 
 /****************************************************************************/
@@ -175,7 +190,14 @@ static noderef b_reme(char c, noderef E) {
 /****************************************************************************/
 static void b_remalle(char c, noderef G) {
 
-   printf("\n TO BE DONE ");
+   noderef temp = G;
+
+   while(!is_empty(get_edges(temp))){
+      if(c == get_nname(temp))   b_reme(c,temp);
+      else  temp = ntail(temp);
+   }
+
+//   if(c == get_nname(temp)) b_reme(c,temp);
 }
 
 /****************************************************************************/
@@ -191,7 +213,9 @@ static noderef b_findn(char c, noderef G) {
 /* FIND an edge in the graph                                                */
 /****************************************************************************/
 static noderef b_finde(char c, noderef E) {
-   printf("\n TO BE DONE "); return NULLREF;
+   return is_empty(E)   ?  NULLREF
+   :  c != get_nname(E) ?  b_finde(c,etail(E))
+   :  E;
 }
 
 /****************************************************************************/
