@@ -167,21 +167,25 @@ static noderef b_remn(char c, noderef G) {
 /****************************************************************************/
 static noderef b_reme(char c, noderef E) {
 
+
+   //FIXA FÖR I HELVETE!!
    noderef temp = E;
    noderef parent = NULLREF;
 
    if(c == get_nname(temp)){
       E = etail(temp);
       free(temp);
-      return E;
    }
+      else{
+            while(!is_empty(temp) && c != get_nname(temp)){
+               parent = temp;
+               temp = etail(temp);
+            }
 
-   while(c != get_nname(temp)){
-      parent = temp;
-      temp = etail(temp);
-   }
-   econs(parent,etail(temp));
-   free(temp);
+            econs(parent,etail(temp));
+            free(temp);
+      }
+
    return E;
 }
 
@@ -189,15 +193,14 @@ static noderef b_reme(char c, noderef E) {
 /* REMove all edges for a given node from the graph                         */
 /****************************************************************************/
 static void b_remalle(char c, noderef G) {
-
+   
+   //FIXA FÖR I HELVETE!!
    noderef temp = G;
-
-   while(!is_empty(get_edges(temp))){
-      if(c == get_nname(temp))   b_reme(c,temp);
-      else  temp = ntail(temp);
+   while(!is_empty(temp)){
+      b_reme(c,temp);
+      temp = ntail(temp);
    }
-
-//   if(c == get_nname(temp)) b_reme(c,temp);
+   G = temp;
 }
 
 /****************************************************************************/
@@ -221,19 +224,15 @@ static noderef b_finde(char c, noderef E) {
 /****************************************************************************/
 /* FIND the number of nodes in the graph (cardinality nodes)                */
 /****************************************************************************/
-static int b_nsize(noderef G) {return is_empty(G) ? 0 : 1 + b_nsize(ntail(G));}
+static int b_nsize(noderef G){return is_empty(G) ? 0 : 1 + b_nsize(ntail(G));}
 
 /****************************************************************************/
 /* FIND the number of edges in the graph (cardinality edges)                */
 /****************************************************************************/
-static int b_nedges(noderef E) {
-  printf("\n TO BE DONE "); return 0;
-  }
+static int b_nedges(noderef E){return is_empty(E) ? 0 : 1 + b_nedges(etail(E));}
 
-static int b_esize(noderef G) {
-  printf("\n TO BE DONE "); return 0;
-  }
-
+static int b_esize(noderef G){return is_empty(G) ? 0 : 1 + b_nedges(ntail(G));}
+   
 /****************************************************************************/
 /* CREATE the adjacency matrix (AM)                                         */
 /****************************************************************************/
@@ -250,7 +249,7 @@ static int b_esize(noderef G) {
 /****************************************************************************/
 static int get_pos(noderef fnode)  {
 
-   printf("\n TO BE DONE "); return 0;
+   return get_nname(fnode) == get_nname(G);
 }
 
 /****************************************************************************/
