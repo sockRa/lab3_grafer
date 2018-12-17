@@ -142,23 +142,27 @@ static noderef b_adde(char c, int w, noderef E)
 /****************************************************************************/
 static noderef b_remn(char c, noderef G) {
 
-   noderef temp = G;
-   noderef parent = NULLREF;
+   return   is_empty(G)                ?     G
+   :        c == get_nname(nhead(G))   ?  ntail(G)
+   :        ncons(nhead(G),b_remn(c,ntail(G)));
 
-   if(c == get_nname(temp)){
-      G = ntail(temp);
-      free(temp);
-      return G;
-   }
+   // noderef temp = G;
+   // noderef parent = NULLREF;
+
+   // if(c == get_nname(temp)){
+   //    G = ntail(temp);
+   //    free(temp);
+   //    return G;
+   // }
    
-   while(c != get_nname(temp)){
-      parent = temp;
-      temp = ntail(temp);
-   }
+   // while(c != get_nname(temp)){
+   //    parent = temp;
+   //    temp = ntail(temp);
+   // }
 
-   ncons(parent,ntail(temp));
-   free(temp);
-   return G;
+   // ncons(parent,ntail(temp));
+   // free(temp);
+   // return G;
 
 }
 
@@ -167,40 +171,48 @@ static noderef b_remn(char c, noderef G) {
 /****************************************************************************/
 static noderef b_reme(char c, noderef E) {
 
+   return   is_empty(E)                ?     E
+   :        c == get_nname(ehead(E))   ?   etail(E)
+   :        econs(ehead(E),b_reme(c,etail(E)));
 
-   //FIXA FÖR I HELVETE!!
-   noderef temp = E;
-   noderef parent = NULLREF;
+   // //FIXA FÖR I HELVETE!!
+   // noderef temp = E;
+   // noderef parent = NULLREF;
 
-   if(c == get_nname(temp)){
-      E = etail(temp);
-      free(temp);
-   }
-      else{
-            while(!is_empty(temp) && c != get_nname(temp)){
-               parent = temp;
-               temp = etail(temp);
-            }
+   // if(c == get_nname(temp)){
+   //    E = etail(temp);
+   //    free(temp);
+   // }
+   //    else{
+   //          while(!is_empty(temp) && c != get_nname(temp)){
+   //             parent = temp;
+   //             temp = etail(temp);
+   //          }
 
-            econs(parent,etail(temp));
-            free(temp);
-      }
+   //          econs(parent,etail(temp));
+   //          free(temp);
+   //    }
 
-   return E;
+   // return E;
 }
 
 /****************************************************************************/
 /* REMove all edges for a given node from the graph                         */
 /****************************************************************************/
 static void b_remalle(char c, noderef G) {
-   
-   //FIXA FÖR I HELVETE!!
-   noderef temp = G;
-   while(!is_empty(temp)){
-      b_reme(c,temp);
-      temp = ntail(temp);
+
+   if(!is_empty(G)){
+      b_reme(c,ehead(G));
+      b_remalle(c,ntail(G));
    }
-   G = temp;
+   
+   // //FIXA FÖR I HELVETE!!
+   // noderef temp = G;
+   // while(!is_empty(temp)){
+   //    b_reme(c,temp);
+   //    temp = ntail(temp);
+   // }
+   // G = temp;
 }
 
 /****************************************************************************/
@@ -247,9 +259,17 @@ static int b_esize(noderef G){return is_empty(G) ? 0 : 1 + b_nedges(ntail(G));}
 /*                              eol                                         */
 /* get_pos("b") will give 1 (and hence AM[0][1] is set to 3 i.e. a-3-b)     */
 /****************************************************************************/
-static int get_pos(noderef fnode)  {
+static int get_pos(noderef fnode)  {   
 
-   return get_nname(fnode) == get_nname(G);
+   int count = 0;
+   noderef temp = G;
+
+   while(get_nname(fnode) != get_nname(temp)){
+      temp = ntail(temp);
+      count++;
+   }
+   return count;
+
 }
 
 /****************************************************************************/
