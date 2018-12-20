@@ -1,84 +1,60 @@
-begraph.c:40:13: warning: ‘D’ defined but not used [-Wunused-variable]
- static int  D[MAXNOD];                          /* Dijkstra-SPT distance    */
+begraph.c:405:13: warning: ‘b_sumMST’ defined but not used [-Wunused-function]
+ static void b_sumMST() {
+             ^~~~~~~~
+begraph.c:400:13: warning: ‘b_dispMST’ defined but not used [-Wunused-function]
+ static void b_dispMST()  {
+             ^~~~~~~~~
+begraph.c:370:13: warning: ‘b_dispSPT’ defined but not used [-Wunused-function]
+ static void b_dispSPT()  {
+             ^~~~~~~~~
+begraph.c:48:13: warning: ‘closest’ defined but not used [-Wunused-variable]
+ static int  closest[MAXNOD];                    /* Prim closest             */
+             ^~~~~~~
+begraph.c:47:13: warning: ‘lowcost’ defined but not used [-Wunused-variable]
+ static int  lowcost[MAXNOD];                    /* Prim lowcost             */
+             ^~~~~~~
+begraph.c:45:13: warning: ‘Warshall’ defined but not used [-Wunused-variable]
+ static int  Warshall[MAXNOD][MAXNOD];           /* Warshall matrix          */
+             ^~~~~~~~
+begraph.c:44:13: warning: ‘Floyd’ defined but not used [-Wunused-variable]
+ static int  Floyd[MAXNOD][MAXNOD];              /* Floyd matrix             */
+             ^~~~~
+begraph.c:42:13: warning: ‘L’ defined but not used [-Wunused-variable]
+ static int  L[MAXNOD];                          /* Dijkstra-SPT weight      */
              ^
 begraph.c:41:13: warning: ‘E’ defined but not used [-Wunused-variable]
  static char E[MAXNOD];                          /* Dijkstra-SPT edge        */
              ^
-begraph.c:42:13: warning: ‘L’ defined but not used [-Wunused-variable]
- static int  L[MAXNOD];                          /* Dijkstra-SPT weight      */
-             ^
-begraph.c:44:13: warning: ‘Floyd’ defined but not used [-Wunused-variable]
- static int  Floyd[MAXNOD][MAXNOD];              /* Floyd matrix             */
-             ^
-begraph.c:45:13: warning: ‘Warshall’ defined but not used [-Wunused-variable]
- static int  Warshall[MAXNOD][MAXNOD];           /* Warshall matrix          */
-             ^
-begraph.c:47:13: warning: ‘lowcost’ defined but not used [-Wunused-variable]
- static int  lowcost[MAXNOD];                    /* Prim lowcost             */
-             ^
-begraph.c:48:13: warning: ‘closest’ defined but not used [-Wunused-variable]
- static int  closest[MAXNOD];                    /* Prim closest             */
-             ^
-begraph.c:68:16: warning: ‘create_n’ defined but not used [-Wunused-function]
- static noderef create_n(char c, int w)
-                ^
-begraph.c:94:16: warning: ‘ncons’ defined but not used [-Wunused-function]
- static noderef ncons(noderef e, noderef N) { return set_nodes(e, N); }
-                ^
-begraph.c:95:16: warning: ‘econs’ defined but not used [-Wunused-function]
- static noderef econs(noderef e, noderef E) { return set_edges(e, E); }
-                ^
-begraph.c:180:12: warning: ‘b_nedges’ defined but not used [-Wunused-function]
- static int b_nedges(noderef E) {
-            ^
-begraph.c:285:13: warning: ‘b_dispSPT’ defined but not used [-Wunused-function]
- static void b_dispSPT()  {
-             ^
-begraph.c:315:13: warning: ‘b_dispMST’ defined but not used [-Wunused-function]
- static void b_dispMST()  { 
-             ^
-begraph.c:320:13: warning: ‘b_sumMST’ defined but not used [-Wunused-function]
- static void b_sumMST() {
-             ^
 begraph.c:40:13: warning: ‘D’ defined but not used [-Wunused-variable]
  static int  D[MAXNOD];                          /* Dijkstra-SPT distance    */
+             ^
+begraph.c:405:13: warning: ‘b_sumMST’ defined but not used [-Wunused-function]
+ static void b_sumMST() {
+             ^~~~~~~~
+begraph.c:400:13: warning: ‘b_dispMST’ defined but not used [-Wunused-function]
+ static void b_dispMST()  {
+             ^~~~~~~~~
+begraph.c:370:13: warning: ‘b_dispSPT’ defined but not used [-Wunused-function]
+ static void b_dispSPT()  {
+             ^~~~~~~~~
+begraph.c:48:13: warning: ‘closest’ defined but not used [-Wunused-variable]
+ static int  closest[MAXNOD];                    /* Prim closest             */
+             ^~~~~~~
+begraph.c:47:13: warning: ‘lowcost’ defined but not used [-Wunused-variable]
+ static int  lowcost[MAXNOD];                    /* Prim lowcost             */
+             ^~~~~~~
+begraph.c:45:13: warning: ‘Warshall’ defined but not used [-Wunused-variable]
+ static int  Warshall[MAXNOD][MAXNOD];           /* Warshall matrix          */
+             ^~~~~~~~
+begraph.c:44:13: warning: ‘Floyd’ defined but not used [-Wunused-variable]
+ static int  Floyd[MAXNOD][MAXNOD];              /* Floyd matrix             */
+             ^~~~~
+begraph.c:42:13: warning: ‘L’ defined but not used [-Wunused-variable]
+ static int  L[MAXNOD];                          /* Dijkstra-SPT weight      */
              ^
 begraph.c:41:13: warning: ‘E’ defined but not used [-Wunused-variable]
  static char E[MAXNOD];                          /* Dijkstra-SPT edge        */
              ^
-begraph.c:42:13: warning: ‘L’ defined but not used [-Wunused-variable]
- static int  L[MAXNOD];                          /* Dijkstra-SPT weight      */
-             ^
-begraph.c:44:13: warning: ‘Floyd’ defined but not used [-Wunused-variable]
- static int  Floyd[MAXNOD][MAXNOD];              /* Floyd matrix             */
-             ^
-begraph.c:45:13: warning: ‘Warshall’ defined but not used [-Wunused-variable]
- static int  Warshall[MAXNOD][MAXNOD];           /* Warshall matrix          */
-             ^
-begraph.c:47:13: warning: ‘lowcost’ defined but not used [-Wunused-variable]
- static int  lowcost[MAXNOD];                    /* Prim lowcost             */
-             ^
-begraph.c:48:13: warning: ‘closest’ defined but not used [-Wunused-variable]
- static int  closest[MAXNOD];                    /* Prim closest             */
-             ^
-begraph.c:68:16: warning: ‘create_n’ defined but not used [-Wunused-function]
- static noderef create_n(char c, int w)
-                ^
-begraph.c:94:16: warning: ‘ncons’ defined but not used [-Wunused-function]
- static noderef ncons(noderef e, noderef N) { return set_nodes(e, N); }
-                ^
-begraph.c:95:16: warning: ‘econs’ defined but not used [-Wunused-function]
- static noderef econs(noderef e, noderef E) { return set_edges(e, E); }
-                ^
-begraph.c:180:12: warning: ‘b_nedges’ defined but not used [-Wunused-function]
- static int b_nedges(noderef E) {
-            ^
-begraph.c:285:13: warning: ‘b_dispSPT’ defined but not used [-Wunused-function]
- static void b_dispSPT()  {
-             ^
-begraph.c:315:13: warning: ‘b_dispMST’ defined but not used [-Wunused-function]
- static void b_dispMST()  { 
-             ^
-begraph.c:320:13: warning: ‘b_sumMST’ defined but not used [-Wunused-function]
- static void b_sumMST() {
+begraph.c:40:13: warning: ‘D’ defined but not used [-Wunused-variable]
+ static int  D[MAXNOD];                          /* Dijkstra-SPT distance    */
              ^

@@ -8,6 +8,7 @@
 /****************************************************************************/
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /****************************************************************************/
 /* define types & constants                                                 */
@@ -145,25 +146,6 @@ static noderef b_remn(char c, noderef G) {
    return   is_empty(G)                ?     G
    :        c == get_nname(nhead(G))   ?  ntail(G)
    :        ncons(nhead(G),b_remn(c,ntail(G)));
-
-   // noderef temp = G;
-   // noderef parent = NULLREF;
-
-   // if(c == get_nname(temp)){
-   //    G = ntail(temp);
-   //    free(temp);
-   //    return G;
-   // }
-   
-   // while(c != get_nname(temp)){
-   //    parent = temp;
-   //    temp = ntail(temp);
-   // }
-
-   // ncons(parent,ntail(temp));
-   // free(temp);
-   // return G;
-
 }
 
 /****************************************************************************/
@@ -174,26 +156,6 @@ static noderef b_reme(char c, noderef E) {
    return   is_empty(E)                ?     E
    :        c == get_nname(ehead(E))   ?   etail(E)
    :        econs(ehead(E),b_reme(c,etail(E)));
-
-   // //FIXA FÖR I HELVETE!!
-   // noderef temp = E;
-   // noderef parent = NULLREF;
-
-   // if(c == get_nname(temp)){
-   //    E = etail(temp);
-   //    free(temp);
-   // }
-   //    else{
-   //          while(!is_empty(temp) && c != get_nname(temp)){
-   //             parent = temp;
-   //             temp = etail(temp);
-   //          }
-
-   //          econs(parent,etail(temp));
-   //          free(temp);
-   //    }
-
-   // return E;
 }
 
 /****************************************************************************/
@@ -205,14 +167,6 @@ static void b_remalle(char c, noderef G) {
       b_reme(c,ehead(G));
       b_remalle(c,ntail(G));
    }
-   
-   // //FIXA FÖR I HELVETE!!
-   // noderef temp = G;
-   // while(!is_empty(temp)){
-   //    b_reme(c,temp);
-   //    temp = ntail(temp);
-   // }
-   // G = temp;
 }
 
 /****************************************************************************/
@@ -241,9 +195,26 @@ static int b_nsize(noderef G){return is_empty(G) ? 0 : 1 + b_nsize(ntail(G));}
 /****************************************************************************/
 /* FIND the number of edges in the graph (cardinality edges)                */
 /****************************************************************************/
-static int b_nedges(noderef E){return is_empty(E) ? 0 : 1 + b_nedges(etail(E));}
+static int b_nedges(noderef E){
 
-static int b_esize(noderef G){return is_empty(G) ? 0 : 1 + b_nedges(ntail(G));}
+   noderef node = E;
+   noderef edge = NULLREF;
+   int count = 0;
+   while(!is_empty(node)){
+      edge = etail(node);
+         while(!is_empty(edge)){
+            count++;
+            edge = etail(edge);
+         }
+         node = ntail(node);
+   }
+   return count;
+}
+
+static int b_esize(noderef G){
+  
+   return is_empty(G) ? 0 : b_nedges(G);
+}
    
 /****************************************************************************/
 /* CREATE the adjacency matrix (AM)                                         */
@@ -356,25 +327,102 @@ static void b_dispSPT()  {
   }
 
 static void b_Dijkstra(char a) {
-  
-   printf("\n TO BE DONE ");
+   
+   cre_adjmat();
+   noderef startNode = G;
+   noderef temp = G;
+   noderef tempTemp = NULLREF;
+   
+   int size = b_nsize(startNode);
+
+   char VS[size];
+
+   for(int i = 0; i < size;i++){
+      if(get_nname(startNode) == a){
+         startNode = startNode;
+         break;
+      }   
+      else startNode = ntail(startNode);
    }
+for(int i = 0; i < size; i++){
+   VS[i] =  get_nname(temp);
+   temp = ntail(temp);
+}
+
+for(int i = 0; i < size; i++){
+   D[i]  =  adjmat[get_pos(startNode)][i];
+   E[i]  =  a;
+   L[i]  =  D[i];  
+}
+//Fixa villkoret
+while(VS)
+
+   
+}
 
 /****************************************************************************/
 /* Floyd                                                                    */
 /****************************************************************************/
 static void b_Floyd()  {
 
-   printf("\n TO BE DONE ");
+   int v = b_nsize(G);
+
+   cre_adjmat();
+
+   for(int y = 0; y < v; y++){
+      for(int x = 0; x < v ; x++){
+         if(x == y)  Floyd[y][x] = 0;
+         else        Floyd[y][x] =  adjmat[y][x];
+      }
    }
+ 
+   for(int k = 0; k < v; k++){
+      for(int i = 0; i < v; i++){
+         for(int j = 0; j < v; j++){
+            if(Floyd[i][j] > Floyd[i][k] + Floyd[k][j])
+               Floyd[i][j] = Floyd[i][k] + Floyd[k][j];
+         }
+      }
+   }
+
+b_mdisp(Floyd,"Floyd");   
+
+}
 
 /****************************************************************************/
 /* Warshall                                                                 */
 /****************************************************************************/
 static void b_Warshall() {
   
-   printf("\n TO BE DONE ");
+   int v = b_nsize(G);
+
+   cre_adjmat();
+
+   for(int y = 0; y < v; y++){
+      for(int x = 0; x < v; x++){
+         if(x == y)  Warshall[y][x] = 0;
+         else        Warshall[y][x] = adjmat[y][x];
+      }
    }
+
+   for(int k = 1; k < v; k++){
+      for(int i = 1; i < v; i++){
+         for(int j = 1; j < v; j++){
+            if(Warshall[i][j] > Warshall[i][k] + Warshall[k][j])
+               Warshall[i][j] = Warshall[i][k] + Warshall[k][j];
+         }
+      }
+   }
+
+   for(int y = 0; y < v; y++){
+      for(int x = 0; x < v; x++){
+         if(x != y && Warshall[y][x] != INFIN)  Warshall[y][x] = 1;
+         else if(x != y)   Warshall[y][x] = 0;
+      }
+   }
+b_mdisp(Warshall,"Warshall");
+
+}
 
 /****************************************************************************/
 /* Prim                                                                     */
