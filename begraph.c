@@ -9,6 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <stdbool.h>
 
 /****************************************************************************/
 /* define types & constants                                                 */
@@ -46,7 +47,7 @@ static int  Floyd[MAXNOD][MAXNOD];              /* Floyd matrix             */
 static int  Warshall[MAXNOD][MAXNOD];           /* Warshall matrix          */
 
 static int  lowcost[MAXNOD];                    /* Prim lowcost             */
-static int  closest[MAXNOD];                    /* Prim closest             */
+static char closest[MAXNOD];                    /* Prim closest             */
 
 /****************************************************************************/
 /* private operations on the node - basic operationa                        */
@@ -320,44 +321,124 @@ static void b_mdisp(int m[MAXNOD][MAXNOD], char * header) {
 /****************************************************************************/
 /* Dijkstra-SPT                                                             */
 /****************************************************************************/
-
-static void b_dispSPT()  {
-
-   printf("\n TO BE DONE "); 
-  }
-
-static void b_Dijkstra(char a) {
+noderef minDistance(noderef source,bool sptSet[]){
    
-   cre_adjmat();
-   noderef startNode = G;
-   noderef temp = G;
-   noderef tempTemp = NULLREF;
+   int min = INFIN;
    
-   int size = b_nsize(startNode);
+   noderef temp = source;
 
-   char VS[size];
-
-   for(int i = 0; i < size;i++){
-      if(get_nname(startNode) == a){
-         startNode = startNode;
-         break;
-      }   
-      else startNode = ntail(startNode);
+   while(!is_empty(temp)){
+      
+      if(sptSet[get_pos(temp)] == false && min > get_ninfo(temp)){
+         source = temp;
+         min = get_ninfo(source);
+      }else
+         temp = etail(temp);
    }
-for(int i = 0; i < size; i++){
-   VS[i] =  get_nname(temp);
-   temp = ntail(temp);
-}
-
-for(int i = 0; i < size; i++){
-   D[i]  =  adjmat[get_pos(startNode)][i];
-   E[i]  =  a;
-   L[i]  =  D[i];  
-}
-//Fixa villkoret
-while(VS)
-
    
+   
+   return source;
+   
+}
+
+static void b_dispSPT(){
+
+   int size = b_nsize(G),i;
+   
+   noderef temp = G;
+
+   printf("\n");
+   printf("Dijkstra + SPT\n");
+   printf("N:");
+
+   for(i = 0; i < size; i++){
+      printf("%7c",get_nname(temp));
+      temp = ntail(temp);
+   }
+   
+
+   printf("\n\nD:");
+
+   for(i = 0; i < size; i++){
+      if(D[i] == INFIN || D[i] == 0)
+         printf("%7s","*");
+      else
+         printf("%7d",D[i]);
+   }
+
+   printf("\nE:");
+   for(i = 0; i < size; i++)
+      printf("%7c",E[i]);
+   
+   printf("\nL:");
+   for(i = 0; i < size; i++){
+      if(L[i] == INFIN || L[i] == 0)
+         printf("%7s","*");
+      else
+         printf("%7d",L[i]);
+   }
+
+}
+
+static void b_Dijkstra(char a){
+
+   cre_adjmat();
+
+   int size = b_nsize(G),i,nodeIndex,alt;
+   
+   bool sptSet[size];
+
+   noderef source = NULLREF;
+
+   //Find the correct node
+   
+   source = b_findn(a,G);
+
+   for(i = 0; i < size; i++){
+      D[i]        =  INFIN;
+      E[i]        =  a;
+      L[i]        =  INFIN;
+      sptSet[i]   =  false;
+   }
+
+   //Distance from source from itself is 0
+   nodeIndex = get_pos(source);
+   D[nodeIndex] = INFIN;
+   E[nodeIndex] = '*';
+   L[nodeIndex] = INFIN;
+   sptSet[nodeIndex] = true;
+
+   //Find shortest path for all nodes
+   for(int count = 0; count < size - 1; count++){
+
+      // Pick the minimum distance vertex from the set of vertices not 
+      // yet processed. u is always equal to src in the first iteration.
+
+      noderef u = minDistance(source,sptSet);
+
+      //Mark the picked vertex as processed
+      sptSet[get_pos(u)] = true;
+      D[get_pos(u)]  =  get_ninfo(u);
+      if(E[get_pos(u)] != '*'){
+         E[get_pos(u)]  =  get_nname(source);
+      }
+      L[get_pos(u)]  =  get_ninfo(u);
+
+      
+
+      for(int v = 0; v < size; v++){
+         alt = D[get_pos(u)] + adjmat[get_pos(u)][v];
+         if(alt < D[v]){
+            D[v]  =  alt;
+            if(E[v] != '*'){
+               E[v]  =  get_nname(u);
+            }
+            L[v]  =  adjmat[get_pos(u)][v];
+         }
+      }
+   }
+
+   b_dispSPT(); 
 }
 
 /****************************************************************************/
@@ -428,20 +509,93 @@ b_mdisp(Warshall,"Warshall");
 /* Prim                                                                     */
 /****************************************************************************/
 
-static void b_dispMST()  { 
+static void b_dispMST(){ 
    
-   printf("\n TO BE DONE ");
-   }
+   int size = b_nsize(G),i;
    
-static void b_sumMST() {
+   noderef temp = G;
 
-   printf("\n TO BE DONE ");
+   printf("\n");
+   printf("Prim + MST\n");
+   printf("N: ");
+
+   for(i = 0; i < size; i++){
+      printf("%7c",get_nname(temp));
+      temp = ntail(temp);
    }
 
-static void b_Prim(char a)     {
+   printf("\n\nlc:");
+   for(i = 0; i < size; i++){
+      if(lowcost[i] == INFIN || lowcost[i] == 0)
+         printf("%7s","*");
+      else
+         printf("%7d",lowcost[i]);
+   }
 
-   printf("\n TO BE DONE ");
-   }                        
+   printf("\ncl:");
+   for(i = 0; i < size; i++){
+      printf("%7c",closest[i]);
+   }
+}   
+static void b_sumMST(){
+
+   int count = 0,size = b_nsize(G);
+
+   for(int i = 0; i < size; i++){
+      count += lowcost[i];
+   }
+
+   printf("\n\nMST sum is: %d\n",count);
+
+   
+}
+
+
+static void b_Prim(char a){
+
+   cre_adjmat();
+
+   int size = b_nsize(G),i,nodeIndex;
+   bool visited[size];
+
+   //Find source node
+   noderef source = b_findn(a,G);
+   noderef u = NULLREF;
+
+   //Init all values
+   for(i = 0; i < size; i++){
+      lowcost[i]  =  INFIN;
+      closest[i]  =  a;
+      visited[i]  =  false;
+   }
+
+   //Mark source node as visited and make it's distance zero.
+   nodeIndex = get_pos(source);
+   lowcost[nodeIndex]   =  0;
+   closest[nodeIndex]   =  '*';
+   //visited[nodeIndex]   =  true;
+
+  for(i = 0; i < size; i++){
+
+     //Pick minimum key vertex
+      u = minDistance(source, visited);
+
+      //Mark picked vertex as visited
+      visited[get_pos(u)] = true;
+
+      for(int v = 0; v < size; v++){
+         if(adjmat[get_pos(u)][v] && visited[v] == false && adjmat[get_pos(u)][v] < lowcost[v]){
+            lowcost[v] = adjmat[get_pos(u)][v];
+            closest[v] = get_nname(u);
+         }
+
+      }
+  }
+
+   b_dispMST();
+   b_sumMST();
+   
+}                        
 
 
 /****************************************************************************/
