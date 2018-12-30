@@ -321,23 +321,33 @@ static void b_mdisp(int m[MAXNOD][MAXNOD], char * header) {
 /****************************************************************************/
 /* Dijkstra-SPT                                                             */
 /****************************************************************************/
-noderef minDistance(noderef source,bool sptSet[]){
+int minDistance(int D[],bool sptSet[],int size){
    
-   int min = INFIN;
-   
-   noderef temp = source;
+   int min = INFIN,index;
 
-   while(!is_empty(temp)){
-      
-      if(sptSet[get_pos(temp)] == false && min > get_ninfo(temp)){
-         source = temp;
-         min = get_ninfo(source);
-      }else
-         temp = etail(temp);
+   for(int v = 0; v < size; v++){
+      if(sptSet[v] == false && D[v] <= min){
+         min = D[v];
+         index = v;
+      }
    }
+
+   return index;
+
+   
+   // noderef temp = source;
+
+   // while(!is_empty(temp)){
+      
+   //    if(sptSet[get_pos(temp)] == false && min > get_ninfo(temp)){
+   //       source = temp;
+   //       min = get_ninfo(source);
+   //    }else
+   //       temp = etail(temp);
+   // }
    
    
-   return source;
+   // return source;
    
 }
 
@@ -384,59 +394,100 @@ static void b_Dijkstra(char a){
 
    cre_adjmat();
 
-   int size = b_nsize(G),i,nodeIndex,alt;
+   int size = b_nsize(G),i,nodeIndex,alt,u,j;
    
    bool sptSet[size];
 
-   noderef source = NULLREF;
+   //noderef u = NULLREF;
+   noderef source = b_findn(a,G);
+   noderef temp = G;
 
-   //Find the correct node
-   
-   source = b_findn(a,G);
-
-   for(i = 0; i < size; i++){
-      D[i]        =  INFIN;
-      E[i]        =  a;
-      L[i]        =  INFIN;
-      sptSet[i]   =  false;
+   for(int i = 0; i < size; i++){
+      D[i]        = INFIN;
+      E[i]        = '*';
+      L[i]        = INFIN;
+      sptSet[i]   = false;
    }
 
-   //Distance from source from itself is 0
-   nodeIndex = get_pos(source);
-   D[nodeIndex] = INFIN;
-   E[nodeIndex] = '*';
-   L[nodeIndex] = INFIN;
-   sptSet[nodeIndex] = true;
+   D[get_pos(source)] = 0;
+   L[get_pos(source)] = 0;
 
-   //Find shortest path for all nodes
-   for(int count = 0; count < size - 1; count++){
+   for(i = 0; i < size - 1; i++){
 
-      // Pick the minimum distance vertex from the set of vertices not 
-      // yet processed. u is always equal to src in the first iteration.
+      //Min-vertex index
+      u = minDistance(D,sptSet,size);
+      temp = G;
 
-      noderef u = minDistance(source,sptSet);
-
-      //Mark the picked vertex as processed
-      sptSet[get_pos(u)] = true;
-      D[get_pos(u)]  =  get_ninfo(u);
-      if(E[get_pos(u)] != '*'){
-         E[get_pos(u)]  =  get_nname(source);
+      //Find corresponding node from index
+      for(j = 0; j < size; j++){
+         if(j == u)  
+            break;
+         else
+            temp = ntail(temp);
       }
-      L[get_pos(u)]  =  get_ninfo(u);
+      
+      //Mark picked vertex as processed
+      sptSet[u] = true;
+
+      for(int v = 0; v < size; v++){
+         if(sptSet[v] == false && adjmat[u][v] && D[u] != INFIN && D[u] + adjmat[u][v] < D[v] ){
+            D[v] = D[u] + adjmat[u][v];
+            E[v] = get_nname(temp);
+            L[v] = adjmat[u][v];
+         } 
+      }
+   }
+
+
+   // noderef source = NULLREF;
+
+   // //Find the correct node
+   
+   // source = b_findn(a,G);
+
+   // for(i = 0; i < size; i++){
+   //    D[i]        =  INFIN;
+   //    E[i]        =  a;
+   //    L[i]        =  INFIN;
+   //    sptSet[i]   =  false;
+   // }
+
+   // //Distance from source from itself is 0
+   // nodeIndex = get_pos(source);
+   // D[nodeIndex] = INFIN;
+   // E[nodeIndex] = '*';
+   // L[nodeIndex] = INFIN;
+   // sptSet[nodeIndex] = true;
+
+   // //Find shortest path for all nodes
+   // for(int count = 0; count < size - 1; count++){
+
+   //    // Pick the minimum distance vertex from the set of vertices not 
+   //    // yet processed. u is always equal to src in the first iteration.
+
+   //    noderef u = minDistance(source,sptSet);
+
+   //    //Mark the picked vertex as processed
+   //    sptSet[get_pos(u)] = true;
+   //    D[get_pos(u)]  =  get_ninfo(u);
+   //    if(E[get_pos(u)] != '*'){
+   //       E[get_pos(u)]  =  get_nname(source);
+   //    }
+   //    L[get_pos(u)]  =  get_ninfo(u);
 
       
 
-      for(int v = 0; v < size; v++){
-         alt = D[get_pos(u)] + adjmat[get_pos(u)][v];
-         if(alt < D[v]){
-            D[v]  =  alt;
-            if(E[v] != '*'){
-               E[v]  =  get_nname(u);
-            }
-            L[v]  =  adjmat[get_pos(u)][v];
-         }
-      }
-   }
+   //    for(int v = 0; v < size; v++){
+   //       alt = D[get_pos(u)] + adjmat[get_pos(u)][v];
+   //       if(alt < D[v]){
+   //          D[v]  =  alt;
+   //          if(E[v] != '*'){
+   //             E[v]  =  get_nname(u);
+   //          }
+   //          L[v]  =  adjmat[get_pos(u)][v];
+   //       }
+   //    }
+   // }
 
    b_dispSPT(); 
 }
@@ -555,47 +606,47 @@ static void b_sumMST(){
 
 static void b_Prim(char a){
 
-   cre_adjmat();
+//    cre_adjmat();
 
-   int size = b_nsize(G),i,nodeIndex;
-   bool visited[size];
+//    int size = b_nsize(G),i,nodeIndex;
+//    bool visited[size];
 
-   //Find source node
-   noderef source = b_findn(a,G);
-   noderef u = NULLREF;
+//    //Find source node
+//    noderef source = b_findn(a,G);
+//    noderef u = NULLREF;
 
-   //Init all values
-   for(i = 0; i < size; i++){
-      lowcost[i]  =  INFIN;
-      closest[i]  =  a;
-      visited[i]  =  false;
-   }
+//    //Init all values
+//    for(i = 0; i < size; i++){
+//       lowcost[i]  =  INFIN;
+//       closest[i]  =  a;
+//       visited[i]  =  false;
+//    }
 
-   //Mark source node as visited and make it's distance zero.
-   nodeIndex = get_pos(source);
-   lowcost[nodeIndex]   =  0;
-   closest[nodeIndex]   =  '*';
-   //visited[nodeIndex]   =  true;
+//    //Mark source node as visited and make it's distance zero.
+//    nodeIndex = get_pos(source);
+//    lowcost[nodeIndex]   =  0;
+//    closest[nodeIndex]   =  '*';
+//    //visited[nodeIndex]   =  true;
 
-  for(i = 0; i < size; i++){
+//   for(i = 0; i < size; i++){
 
-     //Pick minimum key vertex
-      u = minDistance(source, visited);
+//      //Pick minimum key vertex
+//       u = minDistance(source, visited);
 
-      //Mark picked vertex as visited
-      visited[get_pos(u)] = true;
+//       //Mark picked vertex as visited
+//       visited[get_pos(u)] = true;
 
-      for(int v = 0; v < size; v++){
-         if(adjmat[get_pos(u)][v] && visited[v] == false && adjmat[get_pos(u)][v] < lowcost[v]){
-            lowcost[v] = adjmat[get_pos(u)][v];
-            closest[v] = get_nname(u);
-         }
+//       for(int v = 0; v < size; v++){
+//          if(adjmat[get_pos(u)][v] && visited[v] == false && adjmat[get_pos(u)][v] < lowcost[v]){
+//             lowcost[v] = adjmat[get_pos(u)][v];
+//             closest[v] = get_nname(u);
+//          }
 
-      }
-  }
+//       }
+//   }
 
-   b_dispMST();
-   b_sumMST();
+//    b_dispMST();
+//    b_sumMST();
    
 }                        
 
