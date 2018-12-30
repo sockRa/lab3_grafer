@@ -31,53 +31,52 @@
  Enter choice ==> 
  Enter choice ==>  k undirected graph mode 
  Enter choice ==>  d
- TO BE DONE 
  The graph is empty 
  Enter choice ==>  m
- TO BE DONE 
  The graph is empty 
  Enter choice ==>  t
- TO BE DONE 
  The graph is empty 
  Enter choice ==>  v
- TO BE DONE 
  The graph is empty 
  Enter choice ==>  w
- TO BE DONE 
  The graph is empty 
  Enter choice ==>  a Enter node:  a
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  c
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  d
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  e
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  d
- TO BE DONE 
- The graph is empty 
+
+ Adjacency list (5 nodes 0 edges): 
+
+ a : 
+ b : 
+ c : 
+ d : 
+ e : 
+
+
  Enter choice ==>  m
- TO BE DONE 
- The graph is empty 
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   *   *   *   * 
+  b:   *   *   *   *   * 
+  c:   *   *   *   *   * 
+  d:   *   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
  Enter choice ==>  t
- TO BE DONE 
- The graph is empty 
+ The graph contains no edges 
  Enter choice ==>  v
- TO BE DONE 
- The graph is empty 
+ The graph contains no edges 
  Enter choice ==>  w
- TO BE DONE 
- The graph is empty 
+ The graph contains no edges 
  Enter choice ==>  x
- TO BE DONE 
- The graph is empty 
+ The graph contains no edges 
  Enter choice ==>  q
  *** BYE BYE! ***
  *** End of Graph program 

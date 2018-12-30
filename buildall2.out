@@ -1,0 +1,43 @@
+*** tests starting
+*** compiling modules: frontend
+*** compiling modules: backend
+*** Build and Test: saving previous output
+*** Build and Test: compiling system
+*** Build and Test: running script1
+*** Build and Test: running script2
+*** Build and Test: running script3
+*** Build and Test: running script4
+*** Build and Test: running script5
+*** Build and Test: running dgraph0
+*** Build and Test: running dgraph1
+*** Build and Test: running dgraph2
+*** Build and Test: running dgraph3
+*** Build and Test: running dgraph4
+*** Build and Test: running dgraph5
+*** Build and Test: running ugraph0
+*** Build and Test: running ugraph1
+*** Build and Test: running ugraph2
+*** Build and Test: running ugraph3
+*** Build and Test: running ugraph4
+*** Build and Test: running ugraph5
+*** Build and Test: running ugraph6
+*** Build and Test: comparing output script1 (diff)
+*** Build and Test: comparing output script2 (diff)
+*** Build and Test: comparing output script3 (diff)
+*** Build and Test: comparing output script4 (diff)
+*** Build and Test: comparing output script5 (diff)
+*** Build and Test: comparing output dgraph0 (diff)
+*** Build and Test: comparing output dgraph1 (diff)
+*** Build and Test: comparing output dgraph2 (diff)
+*** Build and Test: comparing output dgraph3 (diff)
+*** Build and Test: comparing output dgraph4 (diff)
+*** Build and Test: comparing output dgraph5 (diff)
+*** Build and Test: comparing output ugraph0 (diff)
+*** Build and Test: comparing output ugraph1 (diff)
+*** Build and Test: comparing output ugraph2 (diff)
+*** Build and Test: comparing output ugraph3 (diff)
+*** Build and Test: comparing output ugraph4 (diff)
+*** Build and Test: comparing output ugraph5 (diff)
+*** Build and Test: comparing output ugraph6 (diff)
+*** cleaning up ...
+...tests finished

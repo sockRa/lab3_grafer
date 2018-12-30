@@ -30,170 +30,146 @@
 
  Enter choice ==> 
  Enter choice ==>  a Enter node:  a
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  c
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  d
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  2
- INVALID MENU CHOICE ***
-
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  2
  Enter choice ==>  m
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  t
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  v
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  t
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  v
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  t
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  c
- INVALID MENU CHOICE ***
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   *   * 
+  b:   2   *   *   * 
+  c:   *   *   *   * 
+  d:   *   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d
 
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
+D:      *      2      *      *
+E:      *      a      a      a
+L:      *      2      *      *
  Enter choice ==>  v
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  t
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  d
- TO BE DONE 
- The graph is empty 
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      2      *      *      *
+E:      b      *      b      b
+L:      2      *      *      *
  Enter choice ==>  v
- TO BE DONE 
- The graph is empty 
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      *
+E:      c      c      *      c
+L:      *      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      *
+E:      d      d      d      *
+L:      *      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
  Enter choice ==>  w
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  x
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  x
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  x
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  c
- INVALID MENU CHOICE ***
+ --------------------
+ Warshall
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   0   0 
+  b:   1   0   0   0 
+  c:   0   0   0   0 
+  d:   0   0   0   0 
+ --------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d
 
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
+lc:      *      2      *      *
+cl:      *      a      a      a
 
+MST sum is: 20000
 
- Enter choice ==>  x
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  d
- TO BE DONE 
- The graph is empty 
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d
+
+lc:      2      *      *      *
+cl:      b      *      b      b
+
+MST sum is: 20000
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d
+
+lc:      *      *      *      *
+cl:      c      c      *      c
+
+MST sum is: 29997
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d
+
+lc:      *      *      *      *
+cl:      d      d      d      *
+
+MST sum is: 29997
+
  Enter choice ==>  q
  *** BYE BYE! ***
  *** End of Graph program 

@@ -1,0 +1,3150 @@
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  k directed graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  b Enter node:  a Enter weight:  3
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  4
+ Enter choice ==>  b Enter node:  c Enter node:  a Enter weight:  5
+ Enter choice ==>  b Enter node:  c Enter node:  b Enter weight:  6
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 6 edges): 
+
+ a :  b( 1) c( 2)
+ b :  a( 3) c( 4)
+ c :  a( 5) b( 6)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   1   2 
+  b:   3   *   4 
+  c:   5   6   * 
+ ----------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  c Enter node:  b Enter weight:  4
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 6 edges): 
+
+ a :  b( 1) c( 2)
+ b :  a( 1) c( 4)
+ c :  a( 2) b( 4)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   1   2 
+  b:   1   *   4 
+  c:   2   4   * 
+ ----------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  k directed graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  c Enter node:  b Enter weight:  4
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 3 edges): 
+
+ a :  b( 1) c( 2)
+ b : 
+ c :  b( 4)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   1   2 
+  b:   *   *   * 
+  c:   *   4   * 
+ ----------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  b Enter node:  a
+ *** ERROR Edge (b, a) already exists! 
+ Enter choice ==>  3
+ INVALID MENU CHOICE ***
+
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  4
+ Enter choice ==>  b Enter node:  c Enter node:  a
+ *** ERROR Edge (c, a) already exists! 
+ Enter choice ==>  5
+ INVALID MENU CHOICE ***
+
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==>  b Enter node:  c Enter node:  b
+ *** ERROR Edge (c, b) already exists! 
+ Enter choice ==>  6
+ INVALID MENU CHOICE ***
+
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 6 edges): 
+
+ a :  b( 1) c( 2)
+ b :  a( 1) c( 4)
+ c :  a( 2) b( 4)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   1   2 
+  b:   1   *   4 
+  c:   2   4   * 
+ ----------------
+ 
+ Enter choice ==>  s Enter node:  a Enter node:  b
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 4 edges): 
+
+ a :  c( 2)
+ b :  c( 4)
+ c :  a( 2) b( 4)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   *   2 
+  b:   *   *   4 
+  c:   2   4   * 
+ ----------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  d
+ The graph is empty 
+ Enter choice ==>  m
+ The graph is empty 
+ Enter choice ==>  r
+ The graph is empty 
+ Enter choice ==>  s
+ The graph is empty 
+ Enter choice ==>  n
+ The graph is empty 
+ Enter choice ==>  e
+ The graph is empty 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 0 edges): 
+
+ a : 
+ b : 
+ c : 
+ d : 
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   *   *   * 
+  b:   *   *   *   * 
+  c:   *   *   *   * 
+  d:   *   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  2
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  3
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  4
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  n Enter node:  a
+ Node a found in graph 
+ Enter choice ==>  n Enter node:  b
+ Node b found in graph 
+ Enter choice ==>  n Enter node:  c
+ Node c found in graph 
+ Enter choice ==>  n Enter node:  d
+ Node d found in graph 
+ Enter choice ==>  n Enter node:  e
+ Node e NOT found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  b
+ Edge (a, b) found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  c
+ Edge (a, c) found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  d
+ Edge (a, d) found in graph 
+ Enter choice ==>  e Enter node:  c Enter node:  d
+ Edge (c, d) NOT found in graph 
+ Enter choice ==>  e Enter node:  a Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  e Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  a Enter node:  a
+ *** ERROR Node a already exists! 
+ Enter choice ==>  a Enter node:  b
+ *** ERROR Node b already exists! 
+ Enter choice ==>  a Enter node:  c
+ *** ERROR Node c already exists! 
+ Enter choice ==>  a Enter node:  d
+ *** ERROR Node d already exists! 
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4   * 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  b Enter node:  a Enter node:  b
+ *** ERROR Edge (a, b) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  c
+ *** ERROR Edge (a, c) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  d
+ *** ERROR Edge (a, d) already exists! 
+ Enter choice ==>  b Enter node:  a Enter node:  e Enter weight:  11
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 8 edges): 
+
+ a :  b( 2) c( 3) d( 4) e(11)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e :  a(11)
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4  11 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:  11   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  s Enter node:  a Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  s Enter node:  x
+ *** ERROR Node x NOT in graph! 
+ Enter choice ==>  s Enter node:  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   2   3   4   * 
+  b:   2   *   *   *   * 
+  c:   3   *   *   *   * 
+  d:   4   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  r Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 6 edges): 
+
+ a :  b( 2) c( 3) d( 4)
+ b :  a( 2)
+ c :  a( 3)
+ d :  a( 4)
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   3   4 
+  b:   2   *   *   * 
+  c:   3   *   *   * 
+  d:   4   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  k directed graph mode 
+ Enter choice ==>  d
+ The graph is empty 
+ Enter choice ==>  m
+ The graph is empty 
+ Enter choice ==>  t
+ The graph is empty 
+ Enter choice ==>  v
+ The graph is empty 
+ Enter choice ==>  w
+ The graph is empty 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 0 edges): 
+
+ a : 
+ b : 
+ c : 
+ d : 
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   *   *   *   * 
+  b:   *   *   *   *   * 
+  c:   *   *   *   *   * 
+  d:   *   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  t
+ The graph contains no edges 
+ Enter choice ==>  v
+ The graph contains no edges 
+ Enter choice ==>  w
+ The graph contains no edges 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  k directed graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  13
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  12
+ Enter choice ==>  b Enter node:  a Enter node:  e Enter weight:  20
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  60
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  50
+ Enter choice ==>  b Enter node:  d Enter node:  c Enter weight:  30
+ Enter choice ==>  b Enter node:  d Enter node:  e Enter weight:  40
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 7 edges): 
+
+ a :  b(13) d(12) e(20)
+ b :  c(60)
+ c :  e(50)
+ d :  c(30) e(40)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *  13   *  12  20 
+  b:   *   *  60   *   * 
+  c:   *   *   *   *  50 
+  d:   *   *  30   *  40 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *     13     42     12     20
+E:      *      a      d      a      a
+L:      *     13     30     12     20
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  13  42  12  20 
+  b:   *   0  60   *  110 
+  c:   *   *   0   *  50 
+  d:   *   *  30   0  40 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     60      *    110
+E:      b      *      b      b      c
+L:      *      *     60      *     50
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  13  42  12  20 
+  b:   *   0  60   *  110 
+  c:   *   *   0   *  50 
+  d:   *   *  30   0  40 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *     50
+E:      c      c      *      c      c
+L:      *      *      *      *     50
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  13  42  12  20 
+  b:   *   0  60   *  110 
+  c:   *   *   0   *  50 
+  d:   *   *  30   0  40 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     30      *     40
+E:      d      d      d      *      d
+L:      *      *     30      *     40
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  13  42  12  20 
+  b:   *   0  60   *  110 
+  c:   *   *   0   *  50 
+  d:   *   *  30   0  40 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *      *
+E:      e      e      e      e      *
+L:      *      *      *      *      *
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  13  42  12  20 
+  b:   *   0  60   *  110 
+  c:   *   *   0   *  50 
+  d:   *   *  30   0  40 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  w
+ ------------------------
+ Warshall
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0   1   0   1   1 
+  b:   0   0   1   0   1 
+  c:   0   0   0   0   1 
+  d:   0   0   1   0   1 
+  e:   0   0   0   0   0 
+ ------------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  10
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  30
+ Enter choice ==>  b Enter node:  a Enter node:  e Enter weight:  100
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  50
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  10
+ Enter choice ==>  b Enter node:  d Enter node:  c Enter weight:  20
+ Enter choice ==>  b Enter node:  d Enter node:  e Enter weight:  60
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 7 edges): 
+
+ a :  b(10) d(30) e(100)
+ b :  c(50)
+ c :  e(10)
+ d :  c(20) e(60)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *  10   *  30  100 
+  b:   *   *  50   *   * 
+  c:   *   *   *   *  10 
+  d:   *   *  20   *  60 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *     10     50     30    100
+E:      *      a      d      a      a
+L:      *     10     20     30    100
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  10  50  30  60 
+  b:   *   0  50   *  60 
+  c:   *   *   0   *  10 
+  d:   *   *  20   0  30 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     50      *     60
+E:      b      *      b      b      c
+L:      *      *     50      *     10
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  10  50  30  60 
+  b:   *   0  50   *  60 
+  c:   *   *   0   *  10 
+  d:   *   *  20   0  30 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *     10
+E:      c      c      *      c      c
+L:      *      *      *      *     10
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  10  50  30  60 
+  b:   *   0  50   *  60 
+  c:   *   *   0   *  10 
+  d:   *   *  20   0  30 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     20      *     60
+E:      d      d      d      *      d
+L:      *      *     20      *     60
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  10  50  30  60 
+  b:   *   0  50   *  60 
+  c:   *   *   0   *  10 
+  d:   *   *  20   0  30 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *      *
+E:      e      e      e      e      *
+L:      *      *      *      *      *
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  10  50  30  60 
+  b:   *   0  50   *  60 
+  c:   *   *   0   *  10 
+  d:   *   *  20   0  30 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  w
+ ------------------------
+ Warshall
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0   1   0   1   1 
+  b:   0   0   1   0   1 
+  c:   0   0   0   0   1 
+  d:   0   0   1   0   1 
+  e:   0   0   0   0   0 
+ ------------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  b Enter node:  d Enter weight:  1
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  3
+ Enter choice ==>  d
+
+ Adjacency list (4 nodes 4 edges): 
+
+ a :  b( 1) c( 2)
+ b :  d( 1)
+ c :  d( 3)
+ d : 
+
+
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   1   2   * 
+  b:   *   *   *   1 
+  c:   *   *   *   3 
+  d:   *   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      1      2      2
+E:      *      a      a      b
+L:      *      1      2      1
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   2   2 
+  b:   *   0   *   1 
+  c:   *   *   0   3 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      1
+E:      b      *      b      b
+L:      *      *      *      1
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   2   2 
+  b:   *   0   *   1 
+  c:   *   *   0   3 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      3
+E:      c      c      *      c
+L:      *      *      *      3
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   2   2 
+  b:   *   0   *   1 
+  c:   *   *   0   3 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      *
+E:      d      d      d      *
+L:      *      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   2   2 
+  b:   *   0   *   1 
+  c:   *   *   0   3 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  w
+ --------------------
+ Warshall
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   1   0 
+  b:   0   0   0   1 
+  c:   0   0   0   1 
+  d:   0   0   0   0 
+ --------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  33
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  32
+ Enter choice ==>  b Enter node:  a Enter node:  e Enter weight:  40
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  80
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  70
+ Enter choice ==>  b Enter node:  d Enter node:  c Enter weight:  50
+ Enter choice ==>  b Enter node:  d Enter node:  e Enter weight:  60
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 7 edges): 
+
+ a :  b(33) d(32) e(40)
+ b :  c(80)
+ c :  e(70)
+ d :  c(50) e(60)
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *  33   *  32  40 
+  b:   *   *  80   *   * 
+  c:   *   *   *   *  70 
+  d:   *   *  50   *  60 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *     33     82     32     40
+E:      *      a      d      a      a
+L:      *     33     50     32     40
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  33  82  32  40 
+  b:   *   0  80   *  150 
+  c:   *   *   0   *  70 
+  d:   *   *  50   0  60 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     80      *    150
+E:      b      *      b      b      c
+L:      *      *     80      *     70
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  33  82  32  40 
+  b:   *   0  80   *  150 
+  c:   *   *   0   *  70 
+  d:   *   *  50   0  60 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *     70
+E:      c      c      *      c      c
+L:      *      *      *      *     70
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  33  82  32  40 
+  b:   *   0  80   *  150 
+  c:   *   *   0   *  70 
+  d:   *   *  50   0  60 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *     50      *     60
+E:      d      d      d      *      d
+L:      *      *     50      *     60
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  33  82  32  40 
+  b:   *   0  80   *  150 
+  c:   *   *   0   *  70 
+  d:   *   *  50   0  60 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e
+
+D:      *      *      *      *      *
+E:      e      e      e      e      *
+L:      *      *      *      *      *
+ Enter choice ==>  v
+ ------------------------
+ Floyd
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0  33  82  32  40 
+  b:   *   0  80   *  150 
+  c:   *   *   0   *  70 
+  d:   *   *  50   0  60 
+  e:   *   *   *   *   0 
+ ------------------------
+ 
+ Enter choice ==>  w
+ ------------------------
+ Warshall
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   0   1   0   1   1 
+  b:   0   0   1   0   1 
+  c:   0   0   0   0   1 
+  d:   0   0   1   0   1 
+  e:   0   0   0   0   0 
+ ------------------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  i
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  8
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  5
+ Enter choice ==>  b Enter node:  b Enter node:  a Enter weight:  3
+ Enter choice ==>  b Enter node:  c Enter node:  b Enter weight:  2
+ Enter choice ==>  d
+
+ Adjacency list (3 nodes 4 edges): 
+
+ a :  b( 8) c( 5)
+ b :  a( 3)
+ c :  b( 2)
+
+
+ Enter choice ==>  m
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   8   5 
+  b:   3   *   * 
+  c:   *   2   * 
+ ----------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c
+
+D:     11      8      5
+E:      *      a      a
+L:      3      8      5
+ Enter choice ==>  v
+ ----------------
+ Floyd
+ ----------------
+       a   b   c 
+ ----------------
+  a:   0   7   5 
+  b:   3   0   8 
+  c:   5   2   0 
+ ----------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c
+
+D:      3      *      8
+E:      b      *      a
+L:      3      *      5
+ Enter choice ==>  v
+ ----------------
+ Floyd
+ ----------------
+       a   b   c 
+ ----------------
+  a:   0   7   5 
+  b:   3   0   8 
+  c:   5   2   0 
+ ----------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c
+
+D:      5      2      *
+E:      b      c      *
+L:      3      2      *
+ Enter choice ==>  v
+ ----------------
+ Floyd
+ ----------------
+       a   b   c 
+ ----------------
+  a:   0   7   5 
+  b:   3   0   8 
+  c:   5   2   0 
+ ----------------
+ 
+ Enter choice ==>  w
+ ----------------
+ Warshall
+ ----------------
+       a   b   c 
+ ----------------
+  a:   0   1   1 
+  b:   1   0   0 
+  c:   0   1   0 
+ ----------------
+ 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  d
+ The graph is empty 
+ Enter choice ==>  m
+ The graph is empty 
+ Enter choice ==>  t
+ The graph is empty 
+ Enter choice ==>  v
+ The graph is empty 
+ Enter choice ==>  w
+ The graph is empty 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  d
+
+ Adjacency list (5 nodes 0 edges): 
+
+ a : 
+ b : 
+ c : 
+ d : 
+ e : 
+
+
+ Enter choice ==>  m
+ ------------------------
+ Adjacency Matrix
+ ------------------------
+       a   b   c   d   e 
+ ------------------------
+  a:   *   *   *   *   * 
+  b:   *   *   *   *   * 
+  c:   *   *   *   *   * 
+  d:   *   *   *   *   * 
+  e:   *   *   *   *   * 
+ ------------------------
+ 
+ Enter choice ==>  t
+ The graph contains no edges 
+ Enter choice ==>  v
+ The graph contains no edges 
+ Enter choice ==>  w
+ The graph contains no edges 
+ Enter choice ==>  x
+ The graph contains no edges 
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  a Enter node:  f
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  6
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  5
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  5
+ Enter choice ==>  b Enter node:  b Enter node:  e Enter weight:  3
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  5
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  6
+ Enter choice ==>  b Enter node:  c Enter node:  f Enter weight:  4
+ Enter choice ==>  b Enter node:  d Enter node:  f Enter weight:  2
+ Enter choice ==>  b Enter node:  e Enter node:  f Enter weight:  6
+ Enter choice ==>  d
+
+ Adjacency list (6 nodes 20 edges): 
+
+ a :  b( 6) c( 1) d( 5)
+ b :  a( 6) c( 5) e( 3)
+ c :  a( 1) b( 5) d( 5) e( 6) f( 4)
+ d :  a( 5) c( 5) f( 2)
+ e :  b( 3) c( 6) f( 6)
+ f :  c( 4) d( 2) e( 6)
+
+
+ Enter choice ==>  m
+ ----------------------------
+ Adjacency Matrix
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   *   6   1   5   *   * 
+  b:   6   *   5   *   3   * 
+  c:   1   5   *   5   6   4 
+  d:   5   *   5   *   *   2 
+  e:   *   3   6   *   *   6 
+  f:   *   *   4   2   6   * 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      *      6      1      5      7      5
+E:      *      a      a      a      c      c
+L:      *      6      1      5      6      4
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      6      *      5     10      3      9
+E:      b      *      b      c      b      e
+L:      6      *      5      5      3      6
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      1      5      2      5      6      4
+E:      c      c      *      c      c      c
+L:      1      5      1      5      6      4
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      5     10      5      *      8      2
+E:      d      c      d      *      f      d
+L:      5      5      5      *      6      2
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      7      3      6      8      *      6
+E:      c      e      e      f      *      e
+L:      1      3      6      2      *      6
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  f
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      5      9      4      2      6      *
+E:      c      c      f      f      f      *
+L:      1      5      4      2      6      *
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   6   1   5   7   5 
+  b:   6   0   5  10   3   9 
+  c:   1   5   0   5   6   4 
+  d:   5  10   5   0   8   2 
+  e:   7   3   6   8   0   6 
+  f:   5   9   4   2   6   0 
+ ----------------------------
+ 
+ Enter choice ==>  w
+ ----------------------------
+ Warshall
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   0   0 
+  b:   1   0   1   1   1   1 
+  c:   1   1   0   1   1   1 
+  d:   1   1   1   0   1   1 
+  e:   0   1   1   1   0   1 
+  f:   0   1   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      *      5      1      5      3      2
+cl:      *      c      a      a      b      d
+
+MST sum is: 16
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      *      5      5      3      4
+cl:      c      *      b      c      b      c
+
+MST sum is: 18
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      5      *      2      3      4
+cl:      c      c      *      f      b      c
+
+MST sum is: 15
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      5      5      1      *      6      2
+cl:      d      c      a      *      f      d
+
+MST sum is: 19
+
+ Enter choice ==>  x Enter node:  e
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      3      5      2      *      4
+cl:      c      e      b      f      *      c
+
+MST sum is: 15
+
+ Enter choice ==>  x Enter node:  f
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      3      4      2      6      *
+cl:      c      e      f      f      f      *
+
+MST sum is: 16
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  a Enter node:  f
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  6
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  5
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  5
+ Enter choice ==>  b Enter node:  b Enter node:  e Enter weight:  3
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  5
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  1
+ Enter choice ==>  b Enter node:  c Enter node:  f Enter weight:  1
+ Enter choice ==>  b Enter node:  d Enter node:  f Enter weight:  2
+ Enter choice ==>  b Enter node:  e Enter node:  f Enter weight:  6
+ Enter choice ==>  d
+
+ Adjacency list (6 nodes 20 edges): 
+
+ a :  b( 6) c( 1) d( 5)
+ b :  a( 6) c( 5) e( 3)
+ c :  a( 1) b( 5) d( 5) e( 1) f( 1)
+ d :  a( 5) c( 5) f( 2)
+ e :  b( 3) c( 1) f( 6)
+ f :  c( 1) d( 2) e( 6)
+
+
+ Enter choice ==>  m
+ ----------------------------
+ Adjacency Matrix
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   *   6   1   5   *   * 
+  b:   6   *   5   *   3   * 
+  c:   1   5   *   5   1   1 
+  d:   5   *   5   *   *   2 
+  e:   *   3   1   *   *   6 
+  f:   *   *   1   2   6   * 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      *      6      1      5      2      2
+E:      *      a      a      a      c      c
+L:      *      6      1      5      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      6      *      5     10      3      6
+E:      b      *      b      c      b      c
+L:      6      *      5      5      3      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      1      5      2      5      1      1
+E:      c      c      *      c      c      c
+L:      1      5      1      5      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      5     10      5      *      6      2
+E:      d      c      d      *      c      d
+L:      5      5      5      *      1      2
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      2      3      1      6      *      6
+E:      c      e      e      c      *      e
+L:      1      3      1      5      *      6
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  f
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      2      6      1      2      6      *
+E:      c      c      f      f      f      *
+L:      1      5      1      2      6      *
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   5   1   4   2   2 
+  b:   5   0   4   7   3   5 
+  c:   1   4   0   3   1   1 
+  d:   4   7   3   0   4   2 
+  e:   2   3   1   4   0   2 
+  f:   2   5   1   2   2   0 
+ ----------------------------
+ 
+ Enter choice ==>  w
+ ----------------------------
+ Warshall
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   0   0 
+  b:   1   0   1   1   1   1 
+  c:   1   1   0   1   1   1 
+  d:   1   1   1   0   1   1 
+  e:   0   1   1   1   0   1 
+  f:   0   1   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      *      5      1      5      1      1
+cl:      *      c      a      a      c      c
+
+MST sum is: 13
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      *      1      5      3      1
+cl:      c      *      e      c      b      c
+
+MST sum is: 11
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      3      *      2      1      1
+cl:      c      e      *      f      c      c
+
+MST sum is: 8
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      5      5      1      *      1      2
+cl:      d      c      f      *      c      d
+
+MST sum is: 14
+
+ Enter choice ==>  x Enter node:  e
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      3      1      2      *      1
+cl:      c      e      e      f      *      c
+
+MST sum is: 8
+
+ Enter choice ==>  x Enter node:  f
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      3      1      2      1      *
+cl:      c      e      f      f      c      *
+
+MST sum is: 8
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  u
+ Enter choice ==>  k undirected graph mode 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  a Enter node:  f
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  20
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  36
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  34
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  22
+ Enter choice ==>  b Enter node:  b Enter node:  e Enter weight:  24
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  28
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  30
+ Enter choice ==>  b Enter node:  c Enter node:  f Enter weight:  38
+ Enter choice ==>  b Enter node:  d Enter node:  f Enter weight:  26
+ Enter choice ==>  b Enter node:  e Enter node:  f Enter weight:  36
+ Enter choice ==>  d
+
+ Adjacency list (6 nodes 20 edges): 
+
+ a :  b(20) c(36) d(34)
+ b :  a(20) c(22) e(24)
+ c :  a(36) b(22) d(28) e(30) f(38)
+ d :  a(34) c(28) f(26)
+ e :  b(24) c(30) f(36)
+ f :  c(38) d(26) e(36)
+
+
+ Enter choice ==>  m
+ ----------------------------
+ Adjacency Matrix
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   *  20  36  34   *   * 
+  b:  20   *  22   *  24   * 
+  c:  36  22   *  28  30  38 
+  d:  34   *  28   *   *  26 
+  e:   *  24  30   *   *  36 
+  f:   *   *  38  26  36   * 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      *     20     36     34     44     60
+E:      *      a      a      a      b      d
+L:      *     20     36     34     24     26
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     20      *     22     50     24     60
+E:      b      *      b      c      b      c
+L:     20      *     22     28     24     38
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     36     22     44     28     30     38
+E:      c      c      *      c      c      c
+L:     36     22     22     28     30     38
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     34     50     28      *     58     26
+E:      d      c      d      *      c      d
+L:     34     22     28      *     30     26
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     44     24     30     58      *     36
+E:      b      e      e      c      *      e
+L:     20     24     30     28      *     36
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  f
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     60     60     38     26     36      *
+E:      d      e      f      f      f      *
+L:     34     24     38     26     36      *
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0  20  36  34  44  60 
+  b:  20   0  22  50  24  60 
+  c:  36  22   0  28  30  38 
+  d:  34  50  28   0  58  26 
+  e:  44  24  30  58   0  36 
+  f:  60  60  38  26  36   0 
+ ----------------------------
+ 
+ Enter choice ==>  w
+ ----------------------------
+ Warshall
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   0   0 
+  b:   1   0   1   1   1   1 
+  c:   1   1   0   1   1   1 
+  d:   1   1   1   0   1   1 
+  e:   0   1   1   1   0   1 
+  f:   0   1   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      *     20     22     34     24     26
+cl:      *      a      b      a      b      d
+
+MST sum is: 126
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:     20      *     22     28     24     36
+cl:      b      *      b      c      b      e
+
+MST sum is: 130
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:     20     22      *     28     24     26
+cl:      b      c      *      c      b      d
+
+MST sum is: 120
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:     34     20     28      *     30     26
+cl:      d      a      d      *      c      d
+
+MST sum is: 138
+
+ Enter choice ==>  x Enter node:  e
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:     20     24     22     26      *     36
+cl:      b      e      b      f      *      e
+
+MST sum is: 128
+
+ Enter choice ==>  x Enter node:  f
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:     34     22     28     26     36      *
+cl:      d      c      d      f      f      *
+
+MST sum is: 146
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  a Enter node:  f
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  6
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  3
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  7
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  1
+ Enter choice ==>  b Enter node:  b Enter node:  e Enter weight:  12
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  4
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  5
+ Enter choice ==>  b Enter node:  c Enter node:  f Enter weight:  9
+ Enter choice ==>  b Enter node:  d Enter node:  f Enter weight:  3
+ Enter choice ==>  b Enter node:  e Enter node:  f Enter weight:  8
+ Enter choice ==>  d
+
+ Adjacency list (6 nodes 20 edges): 
+
+ a :  b( 6) c( 3) d( 7)
+ b :  a( 6) c( 1) e(12)
+ c :  a( 3) b( 1) d( 4) e( 5) f( 9)
+ d :  a( 7) c( 4) f( 3)
+ e :  b(12) c( 5) f( 8)
+ f :  c( 9) d( 3) e( 8)
+
+
+ Enter choice ==>  m
+ ----------------------------
+ Adjacency Matrix
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   *   6   3   7   *   * 
+  b:   6   *   1   *  12   * 
+  c:   3   1   *   4   5   9 
+  d:   7   *   4   *   *   3 
+  e:   *  12   5   *   *   8 
+  f:   *   *   9   3   8   * 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      *      6      3      7      8     10
+E:      *      a      a      a      c      d
+L:      *      6      3      7      5      3
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      6      *      1      5     12     10
+E:      b      *      b      c      b      c
+L:      6      *      1      4     12      9
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      3      1      2      4      5      9
+E:      c      c      *      c      c      c
+L:      3      1      1      4      5      9
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      7      5      4      *      9      3
+E:      d      c      d      *      c      d
+L:      7      1      4      *      5      3
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      8     12      5      9      *      8
+E:      c      e      e      c      *      e
+L:      3     12      5      4      *      8
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  f
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:     10     10      9      3      8      *
+E:      d      c      f      f      f      *
+L:      7      1      9      3      8      *
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   4   3   7   8  10 
+  b:   4   0   1   5   6   8 
+  c:   3   1   0   4   5   7 
+  d:   7   5   4   0   9   3 
+  e:   8   6   5   9   0   8 
+  f:  10   8   7   3   8   0 
+ ----------------------------
+ 
+ Enter choice ==>  w
+ ----------------------------
+ Warshall
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   0   0 
+  b:   1   0   1   1   1   1 
+  c:   1   1   0   1   1   1 
+  d:   1   1   1   0   1   1 
+  e:   0   1   1   1   0   1 
+  f:   0   1   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      *      1      3      4      5      3
+cl:      *      c      a      c      c      d
+
+MST sum is: 16
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      3      *      1      4      5      8
+cl:      c      *      b      c      c      e
+
+MST sum is: 21
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      3      1      *      4      5      3
+cl:      c      c      *      c      c      d
+
+MST sum is: 16
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      3      1      4      *      5      3
+cl:      c      c      d      *      c      d
+
+MST sum is: 16
+
+ Enter choice ==>  x Enter node:  e
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      3      1      5      3      *      8
+cl:      c      c      e      f      *      e
+
+MST sum is: 20
+
+ Enter choice ==>  x Enter node:  f
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      3      1      4      3      8      *
+cl:      c      c      d      f      f      *
+
+MST sum is: 19
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  a Enter node:  e
+ Enter choice ==>  a Enter node:  f
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  d Enter weight:  1
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  1
+ Enter choice ==>  b Enter node:  b Enter node:  e Enter weight:  1
+ Enter choice ==>  b Enter node:  c Enter node:  d Enter weight:  1
+ Enter choice ==>  b Enter node:  c Enter node:  e Enter weight:  1
+ Enter choice ==>  b Enter node:  c Enter node:  f Enter weight:  1
+ Enter choice ==>  b Enter node:  d Enter node:  f Enter weight:  1
+ Enter choice ==>  b Enter node:  e Enter node:  f Enter weight:  1
+ Enter choice ==>  d
+
+ Adjacency list (6 nodes 20 edges): 
+
+ a :  b( 1) c( 1) d( 1)
+ b :  a( 1) c( 1) e( 1)
+ c :  a( 1) b( 1) d( 1) e( 1) f( 1)
+ d :  a( 1) c( 1) f( 1)
+ e :  b( 1) c( 1) f( 1)
+ f :  c( 1) d( 1) e( 1)
+
+
+ Enter choice ==>  m
+ ----------------------------
+ Adjacency Matrix
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   *   1   1   1   *   * 
+  b:   1   *   1   *   1   * 
+  c:   1   1   *   1   1   1 
+  d:   1   *   1   *   *   1 
+  e:   *   1   1   *   *   1 
+  f:   *   *   1   1   1   * 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      *      1      1      1      2      2
+E:      *      a      a      a      b      c
+L:      *      1      1      1      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      1      *      1      2      1      2
+E:      b      *      b      a      b      c
+L:      1      *      1      1      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      1      1      2      1      1      1
+E:      c      c      *      c      c      c
+L:      1      1      1      1      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      1      2      1      *      2      1
+E:      d      a      d      *      c      d
+L:      1      1      1      *      1      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  e
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      2      1      1      2      *      1
+E:      b      e      e      c      *      e
+L:      1      1      1      1      *      1
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  t Enter node:  f
+Dijkstra + SPT
+N:      a      b      c      d      e      f
+
+D:      2      2      1      1      1      *
+E:      c      c      f      f      f      *
+L:      1      1      1      1      1      *
+ Enter choice ==>  v
+ ----------------------------
+ Floyd
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   2   2 
+  b:   1   0   1   2   1   2 
+  c:   1   1   0   1   1   1 
+  d:   1   2   1   0   2   1 
+  e:   2   1   1   2   0   1 
+  f:   2   2   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  w
+ ----------------------------
+ Warshall
+ ----------------------------
+       a   b   c   d   e   f 
+ ----------------------------
+  a:   0   1   1   1   0   0 
+  b:   1   0   1   1   1   1 
+  c:   1   1   0   1   1   1 
+  d:   1   1   1   0   1   1 
+  e:   0   1   1   1   0   1 
+  f:   0   1   1   1   1   0 
+ ----------------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      *      1      1      1      1      1
+cl:      *      a      a      a      b      c
+
+MST sum is: 5
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      *      1      1      1      1
+cl:      b      *      b      a      b      c
+
+MST sum is: 5
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      1      *      1      1      1
+cl:      c      c      *      c      c      c
+
+MST sum is: 5
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      1      1      *      1      1
+cl:      d      a      d      *      c      d
+
+MST sum is: 5
+
+ Enter choice ==>  x Enter node:  e
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      1      1      1      *      1
+cl:      b      e      e      c      *      e
+
+MST sum is: 5
+
+ Enter choice ==>  x Enter node:  f
+Prim + MST
+N:       a      b      c      d      e      f
+
+lc:      1      1      1      1      1      *
+cl:      c      c      f      f      f      *
+
+MST sum is: 5
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 
+
+ *** Start of Graph program 
+***************************************************************
+***                                                         ***
+***   h:   display this menu                                ***
+***   u:   set the mode to undirected graph                 ***
+***   i:   set the mode to directed graph                   ***
+***   k:   display the mode (directed / undirected)         ***
+***                                                         ***
+***   d:   display the graph                                ***
+***   m:   display the matrix                               ***
+***                                                         ***
+***   a:   add a  node to the graph                         ***
+***   b:   add an edge to the graph                         ***
+***   r:   remove a  node from the graph                    ***
+***   s:   remove an edge from the graph                    ***
+***                                                         ***
+***   n:   find a  node in the graph                        ***
+***   e:   find an edge in the graph                        ***
+***                                                         ***
+***   t:   Dijkstra + SPT                                   ***
+***   v:   Floyd                                            ***
+***   w:   Warshall                                         ***
+***   x:   Prim                                             ***
+***                                                         ***
+***   q:   quit the program                                 ***
+***                                                         ***
+***************************************************************
+
+
+ Enter choice ==> 
+ Enter choice ==>  a Enter node:  a
+ Enter choice ==>  a Enter node:  b
+ Enter choice ==>  a Enter node:  c
+ Enter choice ==>  a Enter node:  d
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  2
+ Enter choice ==>  m
+ --------------------
+ Adjacency Matrix
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   *   2   *   * 
+  b:   2   *   *   * 
+  c:   *   *   *   * 
+  d:   *   *   *   * 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  a
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      2      *      *
+E:      *      a      a      a
+L:      *      2      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  b
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      2      *      *      *
+E:      b      *      b      b
+L:      2      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  c
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      *
+E:      c      c      *      c
+L:      *      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  t Enter node:  d
+Dijkstra + SPT
+N:      a      b      c      d
+
+D:      *      *      *      *
+E:      d      d      d      *
+L:      *      *      *      *
+ Enter choice ==>  v
+ --------------------
+ Floyd
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   2   *   * 
+  b:   2   0   *   * 
+  c:   *   *   0   * 
+  d:   *   *   *   0 
+ --------------------
+ 
+ Enter choice ==>  w
+ --------------------
+ Warshall
+ --------------------
+       a   b   c   d 
+ --------------------
+  a:   0   1   0   0 
+  b:   1   0   0   0 
+  c:   0   0   0   0 
+  d:   0   0   0   0 
+ --------------------
+ 
+ Enter choice ==>  x Enter node:  a
+Prim + MST
+N:       a      b      c      d
+
+lc:      *      2      *      *
+cl:      *      a      a      a
+
+MST sum is: 20000
+
+ Enter choice ==>  x Enter node:  b
+Prim + MST
+N:       a      b      c      d
+
+lc:      2      *      *      *
+cl:      b      *      b      b
+
+MST sum is: 20000
+
+ Enter choice ==>  x Enter node:  c
+Prim + MST
+N:       a      b      c      d
+
+lc:      *      *      *      *
+cl:      c      c      *      c
+
+MST sum is: 29997
+
+ Enter choice ==>  x Enter node:  d
+Prim + MST
+N:       a      b      c      d
+
+lc:      *      *      *      *
+cl:      d      d      d      *
+
+MST sum is: 29997
+
+ Enter choice ==>  q
+ *** BYE BYE! ***
+ *** End of Graph program 

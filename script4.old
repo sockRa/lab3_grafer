@@ -31,21 +31,13 @@
  Enter choice ==> 
  Enter choice ==>  k undirected graph mode 
  Enter choice ==>  a Enter node:  a
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
  Enter choice ==>  a Enter node:  c
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  1
+ Enter choice ==>  b Enter node:  a Enter node:  b Enter weight:  1
+ Enter choice ==>  b Enter node:  a Enter node:  c Enter weight:  2
+ Enter choice ==>  b Enter node:  b Enter node:  a
+ *** ERROR Edge (b, a) already exists! 
+ Enter choice ==>  3
  INVALID MENU CHOICE ***
 
 ***************************************************************
@@ -76,13 +68,10 @@
 ***************************************************************
 
 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  c
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  2
+ Enter choice ==>  b Enter node:  b Enter node:  c Enter weight:  4
+ Enter choice ==>  b Enter node:  c Enter node:  a
+ *** ERROR Edge (c, a) already exists! 
+ Enter choice ==>  5
  INVALID MENU CHOICE ***
 
 ***************************************************************
@@ -113,157 +102,8 @@
 ***************************************************************
 
 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  3
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  c
- INVALID MENU CHOICE ***
-
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
- Enter choice ==>  4
- INVALID MENU CHOICE ***
-
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  c
- INVALID MENU CHOICE ***
-
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
- Enter choice ==>  a Enter node:  5
- TO BE DONE 
- TO BE DONE 
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  c
- INVALID MENU CHOICE ***
-
-***************************************************************
-***                                                         ***
-***   h:   display this menu                                ***
-***   u:   set the mode to undirected graph                 ***
-***   i:   set the mode to directed graph                   ***
-***   k:   display the mode (directed / undirected)         ***
-***                                                         ***
-***   d:   display the graph                                ***
-***   m:   display the matrix                               ***
-***                                                         ***
-***   a:   add a  node to the graph                         ***
-***   b:   add an edge to the graph                         ***
-***   r:   remove a  node from the graph                    ***
-***   s:   remove an edge from the graph                    ***
-***                                                         ***
-***   n:   find a  node in the graph                        ***
-***   e:   find an edge in the graph                        ***
-***                                                         ***
-***   t:   Dijkstra + SPT                                   ***
-***   v:   Floyd                                            ***
-***   w:   Warshall                                         ***
-***   x:   Prim                                             ***
-***                                                         ***
-***   q:   quit the program                                 ***
-***                                                         ***
-***************************************************************
-
-
- Enter choice ==>  b
- TO BE DONE 
- The graph is empty 
+ Enter choice ==>  b Enter node:  c Enter node:  b
+ *** ERROR Edge (c, b) already exists! 
  Enter choice ==>  6
  INVALID MENU CHOICE ***
 
@@ -296,23 +136,46 @@
 
 
  Enter choice ==>  d
- TO BE DONE 
- The graph is empty 
+
+ Adjacency list (3 nodes 6 edges): 
+
+ a :  b( 1) c( 2)
+ b :  a( 1) c( 4)
+ c :  a( 2) b( 4)
+
+
  Enter choice ==>  m
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  s
- TO BE DONE 
- The graph is empty 
- Enter choice ==>  a Enter node:  b
- TO BE DONE 
- TO BE DONE 
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   1   2 
+  b:   1   *   4 
+  c:   2   4   * 
+ ----------------
+ 
+ Enter choice ==>  s Enter node:  a Enter node:  b
  Enter choice ==>  d
- TO BE DONE 
- The graph is empty 
+
+ Adjacency list (3 nodes 4 edges): 
+
+ a :  c( 2)
+ b :  c( 4)
+ c :  a( 2) b( 4)
+
+
  Enter choice ==>  m
- TO BE DONE 
- The graph is empty 
+ ----------------
+ Adjacency Matrix
+ ----------------
+       a   b   c 
+ ----------------
+  a:   *   *   2 
+  b:   *   *   4 
+  c:   2   4   * 
+ ----------------
+ 
  Enter choice ==>  q
  *** BYE BYE! ***
  *** End of Graph program 

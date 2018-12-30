@@ -475,32 +475,34 @@ b_mdisp(Floyd,"Floyd");
 /****************************************************************************/
 static void b_Warshall() {
   
-   int v = b_nsize(G);
+   int size = b_nsize(G),i,j,k;
 
    cre_adjmat();
 
-   for(int y = 0; y < v; y++){
-      for(int x = 0; x < v; x++){
-         if(x == y)  Warshall[y][x] = 0;
-         else        Warshall[y][x] = adjmat[y][x];
+   for(i = 0; i < size; i++){
+      for(j = 0; j < size; j++){
+         Warshall[i][j] = adjmat[i][j];
       }
    }
 
-   for(int k = 1; k < v; k++){
-      for(int i = 1; i < v; i++){
-         for(int j = 1; j < v; j++){
-            if(Warshall[i][j] > Warshall[i][k] + Warshall[k][j])
+   for(k = 0; k < size; k++){
+      for(i = 0; i < size; i++){
+         for(j = 0; j < size; j++){
+            if(Warshall[i][k] + Warshall[k][j] < Warshall[i][j])
                Warshall[i][j] = Warshall[i][k] + Warshall[k][j];
          }
       }
    }
 
-   for(int y = 0; y < v; y++){
-      for(int x = 0; x < v; x++){
-         if(x != y && Warshall[y][x] != INFIN)  Warshall[y][x] = 1;
-         else if(x != y)   Warshall[y][x] = 0;
+   for(i = 0; i < size; i++){
+      for(j = 0; j < size; j++){
+         if(i != j && Warshall[i][j] != INFIN) 
+            Warshall[i][j] = 1;
+         else
+            Warshall[i][j] = 0;
       }
    }
+
 b_mdisp(Warshall,"Warshall");
 
 }
