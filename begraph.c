@@ -332,23 +332,7 @@ int minDistance(int D[],bool sptSet[],int size){
       }
    }
 
-   return index;
-
-   
-   // noderef temp = source;
-
-   // while(!is_empty(temp)){
-      
-   //    if(sptSet[get_pos(temp)] == false && min > get_ninfo(temp)){
-   //       source = temp;
-   //       min = get_ninfo(source);
-   //    }else
-   //       temp = etail(temp);
-   // }
-   
-   
-   // return source;
-   
+   return index;   
 }
 
 static void b_dispSPT(){
@@ -433,7 +417,7 @@ static void b_Dijkstra(char a){
       sptSet[u] = true;
 
       for(int v = 0; v < size; v++){
-         if(sptSet[v] == false && adjmat[u][v] && D[u] != INFIN && D[u] + adjmat[u][v] < D[v] ){
+         if(sptSet[v] == false && adjmat[u][v] && D[u] != INFIN && D[u] + adjmat[u][v] < D[v]){
             D[v] = D[u] + adjmat[u][v];
             if(v != get_pos(source))
             E[v] = get_nname(temp);
@@ -441,57 +425,6 @@ static void b_Dijkstra(char a){
          } 
       }
    }
-
-
-   // noderef source = NULLREF;
-
-   // //Find the correct node
-   
-   // source = b_findn(a,G);
-
-   // for(i = 0; i < size; i++){
-   //    D[i]        =  INFIN;
-   //    E[i]        =  a;
-   //    L[i]        =  INFIN;
-   //    sptSet[i]   =  false;
-   // }
-
-   // //Distance from source from itself is 0
-   // nodeIndex = get_pos(source);
-   // D[nodeIndex] = INFIN;
-   // E[nodeIndex] = '*';
-   // L[nodeIndex] = INFIN;
-   // sptSet[nodeIndex] = true;
-
-   // //Find shortest path for all nodes
-   // for(int count = 0; count < size - 1; count++){
-
-   //    // Pick the minimum distance vertex from the set of vertices not 
-   //    // yet processed. u is always equal to src in the first iteration.
-
-   //    noderef u = minDistance(source,sptSet);
-
-   //    //Mark the picked vertex as processed
-   //    sptSet[get_pos(u)] = true;
-   //    D[get_pos(u)]  =  get_ninfo(u);
-   //    if(E[get_pos(u)] != '*'){
-   //       E[get_pos(u)]  =  get_nname(source);
-   //    }
-   //    L[get_pos(u)]  =  get_ninfo(u);
-
-      
-
-   //    for(int v = 0; v < size; v++){
-   //       alt = D[get_pos(u)] + adjmat[get_pos(u)][v];
-   //       if(alt < D[v]){
-   //          D[v]  =  alt;
-   //          if(E[v] != '*'){
-   //             E[v]  =  get_nname(u);
-   //          }
-   //          L[v]  =  adjmat[get_pos(u)][v];
-   //       }
-   //    }
-   // }
 
    b_dispSPT(); 
 }
