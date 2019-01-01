@@ -76,7 +76,7 @@ Dijkstra + SPT
 N:      a      b      c      d      e      f
 
 D:      *      1      1      1      2      2
-E:      *      a      a      a      b      c
+E:      *      a      a      a      c      d
 L:      *      1      1      1      1      1
  Enter choice ==>  v
  ----------------------------
@@ -97,7 +97,7 @@ Dijkstra + SPT
 N:      a      b      c      d      e      f
 
 D:      1      *      1      2      1      2
-E:      b      *      b      a      b      c
+E:      b      *      b      c      b      e
 L:      1      *      1      1      1      1
  Enter choice ==>  v
  ----------------------------
@@ -117,9 +117,9 @@ L:      1      *      1      1      1      1
 Dijkstra + SPT
 N:      a      b      c      d      e      f
 
-D:      1      1      2      1      1      1
+D:      1      1      *      1      1      1
 E:      c      c      *      c      c      c
-L:      1      1      1      1      1      1
+L:      1      1      *      1      1      1
  Enter choice ==>  v
  ----------------------------
  Floyd
@@ -139,7 +139,7 @@ Dijkstra + SPT
 N:      a      b      c      d      e      f
 
 D:      1      2      1      *      2      1
-E:      d      a      d      *      c      d
+E:      d      c      d      *      f      d
 L:      1      1      1      *      1      1
  Enter choice ==>  v
  ----------------------------
@@ -160,7 +160,7 @@ Dijkstra + SPT
 N:      a      b      c      d      e      f
 
 D:      2      1      1      2      *      1
-E:      b      e      e      c      *      e
+E:      c      e      e      f      *      e
 L:      1      1      1      1      *      1
  Enter choice ==>  v
  ----------------------------
@@ -181,7 +181,7 @@ Dijkstra + SPT
 N:      a      b      c      d      e      f
 
 D:      2      2      1      1      1      *
-E:      c      c      f      f      f      *
+E:      d      e      f      f      f      *
 L:      1      1      1      1      1      *
  Enter choice ==>  v
  ----------------------------
@@ -203,12 +203,12 @@ L:      1      1      1      1      1      *
  ----------------------------
        a   b   c   d   e   f 
  ----------------------------
-  a:   0   1   1   1   0   0 
-  b:   1   0   1   1   1   1 
-  c:   1   1   0   1   1   1 
-  d:   1   1   1   0   1   1 
-  e:   0   1   1   1   0   1 
-  f:   0   1   1   1   1   0 
+  a:   1   1   1   1   1   1 
+  b:   1   1   1   1   1   1 
+  c:   1   1   1   1   1   1 
+  d:   1   1   1   1   1   1 
+  e:   1   1   1   1   1   1 
+  f:   1   1   1   1   1   1 
  ----------------------------
  
  Enter choice ==>  x Enter node:  a
@@ -216,7 +216,7 @@ Prim + MST
 N:       a      b      c      d      e      f
 
 lc:      *      1      1      1      1      1
-cl:      *      a      a      a      b      c
+cl:      *      a      a      a      f      d
 
 MST sum is: 5
 
@@ -225,7 +225,7 @@ Prim + MST
 N:       a      b      c      d      e      f
 
 lc:      1      *      1      1      1      1
-cl:      b      *      b      a      b      c
+cl:      b      *      b      f      b      e
 
 MST sum is: 5
 
@@ -243,7 +243,7 @@ Prim + MST
 N:       a      b      c      d      e      f
 
 lc:      1      1      1      *      1      1
-cl:      d      a      d      *      c      d
+cl:      d      e      d      *      f      d
 
 MST sum is: 5
 
@@ -252,7 +252,7 @@ Prim + MST
 N:       a      b      c      d      e      f
 
 lc:      1      1      1      1      *      1
-cl:      b      e      e      c      *      e
+cl:      d      e      e      f      *      e
 
 MST sum is: 5
 
@@ -261,7 +261,7 @@ Prim + MST
 N:       a      b      c      d      e      f
 
 lc:      1      1      1      1      1      *
-cl:      c      c      f      f      f      *
+cl:      d      e      f      f      f      *
 
 MST sum is: 5
 

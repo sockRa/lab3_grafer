@@ -32,12 +32,112 @@
 *** Build and Test: comparing output dgraph3 (diff)
 *** Build and Test: comparing output dgraph4 (diff)
 *** Build and Test: comparing output dgraph5 (diff)
+120,122c120,122
+<   a:   0   1   1 
+<   b:   1   0   1 
+<   c:   1   1   0 
+---
+>   a:   1   1   1 
+>   b:   1   1   1 
+>   c:   1   1   1 
 *** Build and Test: comparing output ugraph0 (diff)
 *** Build and Test: comparing output ugraph1 (diff)
+206,211c206,211
+<   a:   0   1   1   1   1   1 
+<   b:   1   0   1   1   1   1 
+<   c:   1   1   0   1   1   1 
+<   d:   1   1   1   0   1   1 
+<   e:   1   1   1   1   0   1 
+<   f:   1   1   1   1   1   0 
+---
+>   a:   1   1   1   1   1   1 
+>   b:   1   1   1   1   1   1 
+>   c:   1   1   1   1   1   1 
+>   d:   1   1   1   1   1   1 
+>   e:   1   1   1   1   1   1 
+>   f:   1   1   1   1   1   1 
 *** Build and Test: comparing output ugraph2 (diff)
+206,211c206,211
+<   a:   0   1   1   1   1   1 
+<   b:   1   0   1   1   1   1 
+<   c:   1   1   0   1   1   1 
+<   d:   1   1   1   0   1   1 
+<   e:   1   1   1   1   0   1 
+<   f:   1   1   1   1   1   0 
+---
+>   a:   1   1   1   1   1   1 
+>   b:   1   1   1   1   1   1 
+>   c:   1   1   1   1   1   1 
+>   d:   1   1   1   1   1   1 
+>   e:   1   1   1   1   1   1 
+>   f:   1   1   1   1   1   1 
 *** Build and Test: comparing output ugraph3 (diff)
+208,213c208,213
+<   a:   0   1   1   1   1   1 
+<   b:   1   0   1   1   1   1 
+<   c:   1   1   0   1   1   1 
+<   d:   1   1   1   0   1   1 
+<   e:   1   1   1   1   0   1 
+<   f:   1   1   1   1   1   0 
+---
+>   a:   1   1   1   1   1   1 
+>   b:   1   1   1   1   1   1 
+>   c:   1   1   1   1   1   1 
+>   d:   1   1   1   1   1   1 
+>   e:   1   1   1   1   1   1 
+>   f:   1   1   1   1   1   1 
 *** Build and Test: comparing output ugraph4 (diff)
+206,211c206,211
+<   a:   0   1   1   1   1   1 
+<   b:   1   0   1   1   1   1 
+<   c:   1   1   0   1   1   1 
+<   d:   1   1   1   0   1   1 
+<   e:   1   1   1   1   0   1 
+<   f:   1   1   1   1   1   0 
+---
+>   a:   1   1   1   1   1   1 
+>   b:   1   1   1   1   1   1 
+>   c:   1   1   1   1   1   1 
+>   d:   1   1   1   1   1   1 
+>   e:   1   1   1   1   1   1 
+>   f:   1   1   1   1   1   1 
 *** Build and Test: comparing output ugraph5 (diff)
+206,211c206,211
+<   a:   0   1   1   1   1   1 
+<   b:   1   0   1   1   1   1 
+<   c:   1   1   0   1   1   1 
+<   d:   1   1   1   0   1   1 
+<   e:   1   1   1   1   0   1 
+<   f:   1   1   1   1   1   0 
+---
+>   a:   1   1   1   1   1   1 
+>   b:   1   1   1   1   1   1 
+>   c:   1   1   1   1   1   1 
+>   d:   1   1   1   1   1   1 
+>   e:   1   1   1   1   1   1 
+>   f:   1   1   1   1   1   1 
 *** Build and Test: comparing output ugraph6 (diff)
+131,132c131,132
+<   a:   0   1   0   0 
+<   b:   1   0   0   0 
+---
+>   a:   1   1   0   0 
+>   b:   1   1   0   0 
+144c144
+< MST sum is: 20000
+---
+> MST sum is: 2
+153c153
+< MST sum is: 20000
+---
+> MST sum is: 2
+162c162
+< MST sum is: 20000
+---
+> MST sum is: 2
+171c171
+< MST sum is: 20000
+---
+> MST sum is: 2
 *** cleaning up ...
 ...tests finished

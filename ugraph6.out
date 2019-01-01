@@ -128,8 +128,8 @@ L:      *      *      *      *
  --------------------
        a   b   c   d 
  --------------------
-  a:   0   1   0   0 
-  b:   1   0   0   0 
+  a:   1   1   0   0 
+  b:   1   1   0   0 
   c:   0   0   0   0 
   d:   0   0   0   0 
  --------------------
@@ -141,7 +141,7 @@ N:       a      b      c      d
 lc:      *      2      *      *
 cl:      *      a      a      a
 
-MST sum is: 20000
+MST sum is: 2
 
  Enter choice ==>  x Enter node:  b
 Prim + MST
@@ -150,25 +150,25 @@ N:       a      b      c      d
 lc:      2      *      *      *
 cl:      b      *      b      b
 
-MST sum is: 20000
+MST sum is: 2
 
  Enter choice ==>  x Enter node:  c
 Prim + MST
 N:       a      b      c      d
 
-lc:      *      *      *      *
-cl:      c      c      *      c
+lc:      2      *      *      *
+cl:      b      c      *      c
 
-MST sum is: 29997
+MST sum is: 2
 
  Enter choice ==>  x Enter node:  d
 Prim + MST
 N:       a      b      c      d
 
-lc:      *      *      *      *
-cl:      d      d      d      *
+lc:      2      *      *      *
+cl:      b      d      d      *
 
-MST sum is: 29997
+MST sum is: 2
 
  Enter choice ==>  q
  *** BYE BYE! ***

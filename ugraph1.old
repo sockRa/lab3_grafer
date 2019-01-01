@@ -117,9 +117,9 @@ L:      6      *      5      5      3      6
 Dijkstra + SPT
 N:      a      b      c      d      e      f
 
-D:      1      5      2      5      6      4
+D:      1      5      *      5      6      4
 E:      c      c      *      c      c      c
-L:      1      5      1      5      6      4
+L:      1      5      *      5      6      4
  Enter choice ==>  v
  ----------------------------
  Floyd
@@ -203,31 +203,31 @@ L:      1      5      4      2      6      *
  ----------------------------
        a   b   c   d   e   f 
  ----------------------------
-  a:   0   1   1   1   0   0 
+  a:   0   1   1   1   1   1 
   b:   1   0   1   1   1   1 
   c:   1   1   0   1   1   1 
   d:   1   1   1   0   1   1 
-  e:   0   1   1   1   0   1 
-  f:   0   1   1   1   1   0 
+  e:   1   1   1   1   0   1 
+  f:   1   1   1   1   1   0 
  ----------------------------
  
  Enter choice ==>  x Enter node:  a
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:      *      5      1      5      3      2
-cl:      *      c      a      a      b      d
+lc:      *      5      1      2      3      4
+cl:      *      c      a      f      b      c
 
-MST sum is: 16
+MST sum is: 15
 
  Enter choice ==>  x Enter node:  b
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:      1      *      5      5      3      4
-cl:      c      *      b      c      b      c
+lc:      1      *      5      2      3      4
+cl:      c      *      b      f      b      c
 
-MST sum is: 18
+MST sum is: 15
 
  Enter choice ==>  x Enter node:  c
 Prim + MST
@@ -242,10 +242,10 @@ MST sum is: 15
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:      5      5      1      *      6      2
-cl:      d      c      a      *      f      d
+lc:      1      5      4      *      3      2
+cl:      c      c      f      *      b      d
 
-MST sum is: 19
+MST sum is: 15
 
  Enter choice ==>  x Enter node:  e
 Prim + MST
@@ -260,10 +260,10 @@ MST sum is: 15
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:      1      3      4      2      6      *
-cl:      c      e      f      f      f      *
+lc:      1      5      4      2      3      *
+cl:      c      c      f      f      b      *
 
-MST sum is: 16
+MST sum is: 15
 
  Enter choice ==>  q
  *** BYE BYE! ***

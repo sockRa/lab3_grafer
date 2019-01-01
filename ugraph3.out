@@ -119,9 +119,9 @@ L:     20      *     22     28     24     38
 Dijkstra + SPT
 N:      a      b      c      d      e      f
 
-D:     36     22     44     28     30     38
+D:     36     22      *     28     30     38
 E:      c      c      *      c      c      c
-L:     36     22     22     28     30     38
+L:     36     22      *     28     30     38
  Enter choice ==>  v
  ----------------------------
  Floyd
@@ -205,31 +205,31 @@ L:     34     24     38     26     36      *
  ----------------------------
        a   b   c   d   e   f 
  ----------------------------
-  a:   0   1   1   1   0   0 
-  b:   1   0   1   1   1   1 
-  c:   1   1   0   1   1   1 
-  d:   1   1   1   0   1   1 
-  e:   0   1   1   1   0   1 
-  f:   0   1   1   1   1   0 
+  a:   1   1   1   1   1   1 
+  b:   1   1   1   1   1   1 
+  c:   1   1   1   1   1   1 
+  d:   1   1   1   1   1   1 
+  e:   1   1   1   1   1   1 
+  f:   1   1   1   1   1   1 
  ----------------------------
  
  Enter choice ==>  x Enter node:  a
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:      *     20     22     34     24     26
-cl:      *      a      b      a      b      d
+lc:      *     20     22     28     24     26
+cl:      *      a      b      c      b      d
 
-MST sum is: 126
+MST sum is: 120
 
  Enter choice ==>  x Enter node:  b
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:     20      *     22     28     24     36
-cl:      b      *      b      c      b      e
+lc:     20      *     22     28     24     26
+cl:      b      *      b      c      b      d
 
-MST sum is: 130
+MST sum is: 120
 
  Enter choice ==>  x Enter node:  c
 Prim + MST
@@ -244,28 +244,28 @@ MST sum is: 120
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:     34     20     28      *     30     26
-cl:      d      a      d      *      c      d
+lc:     20     22     28      *     24     26
+cl:      b      c      d      *      b      d
 
-MST sum is: 138
+MST sum is: 120
 
  Enter choice ==>  x Enter node:  e
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:     20     24     22     26      *     36
-cl:      b      e      b      f      *      e
+lc:     20     24     22     28      *     26
+cl:      b      e      b      c      *      d
 
-MST sum is: 128
+MST sum is: 120
 
  Enter choice ==>  x Enter node:  f
 Prim + MST
 N:       a      b      c      d      e      f
 
-lc:     34     22     28     26     36      *
-cl:      d      c      d      f      f      *
+lc:     20     22     28     26     24      *
+cl:      b      c      d      f      b      *
 
-MST sum is: 146
+MST sum is: 120
 
  Enter choice ==>  q
  *** BYE BYE! ***

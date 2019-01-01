@@ -394,7 +394,7 @@ static void b_Dijkstra(char a){
 
    cre_adjmat();
 
-   int size = b_nsize(G),i,nodeIndex,alt,u,j;
+   int size = b_nsize(G),i,u,j;
    
    bool sptSet[size];
 
@@ -404,7 +404,10 @@ static void b_Dijkstra(char a){
 
    for(int i = 0; i < size; i++){
       D[i]        = INFIN;
-      E[i]        = '*';
+      if(i == get_pos(source)){
+         E[i] = '*';
+      }else
+      E[i]        = a;
       L[i]        = INFIN;
       sptSet[i]   = false;
    }
@@ -432,6 +435,7 @@ static void b_Dijkstra(char a){
       for(int v = 0; v < size; v++){
          if(sptSet[v] == false && adjmat[u][v] && D[u] != INFIN && D[u] + adjmat[u][v] < D[v] ){
             D[v] = D[u] + adjmat[u][v];
+            if(v != get_pos(source))
             E[v] = get_nname(temp);
             L[v] = adjmat[u][v];
          } 
@@ -547,7 +551,7 @@ static void b_Warshall() {
 
    for(i = 0; i < size; i++){
       for(j = 0; j < size; j++){
-         if(i != j && Warshall[i][j] != INFIN) 
+         if(Warshall[i][j] != INFIN) 
             Warshall[i][j] = 1;
          else
             Warshall[i][j] = 0;
@@ -592,10 +596,12 @@ static void b_dispMST(){
 }   
 static void b_sumMST(){
 
-   int count = 0,size = b_nsize(G);
+   int count = 0;
+   int size = b_nsize(G);
 
    for(int i = 0; i < size; i++){
-      count += lowcost[i];
+      if(lowcost[i] != INFIN)
+         count += lowcost[i];
    }
 
    printf("\n\nMST sum is: %d\n",count);
@@ -606,47 +612,57 @@ static void b_sumMST(){
 
 static void b_Prim(char a){
 
-//    cre_adjmat();
+   cre_adjmat();
 
-//    int size = b_nsize(G),i,nodeIndex;
-//    bool visited[size];
+   int size = b_nsize(G),i,nodeIndex,u,j;
+   bool visited[size];
 
-//    //Find source node
-//    noderef source = b_findn(a,G);
-//    noderef u = NULLREF;
+   //Find source node
+   noderef source = b_findn(a,G);
+   noderef temp = NULLREF;
+   //noderef u = NULLREF;
 
-//    //Init all values
-//    for(i = 0; i < size; i++){
-//       lowcost[i]  =  INFIN;
-//       closest[i]  =  a;
-//       visited[i]  =  false;
-//    }
+   //Init all values
+   for(i = 0; i < size; i++){
+      lowcost[i]  =  INFIN;
+      closest[i]  =  a;
+      visited[i]  =  false;
+   }
 
-//    //Mark source node as visited and make it's distance zero.
-//    nodeIndex = get_pos(source);
-//    lowcost[nodeIndex]   =  0;
-//    closest[nodeIndex]   =  '*';
-//    //visited[nodeIndex]   =  true;
+   //Mark source node as visited and make it's distance zero.
+   nodeIndex = get_pos(source);
+   lowcost[nodeIndex]   =  0;
+   closest[nodeIndex]   =  '*';
+   //visited[nodeIndex]   =  true;
 
-//   for(i = 0; i < size; i++){
+  for(i = 0; i < size - 1; i++){
 
-//      //Pick minimum key vertex
-//       u = minDistance(source, visited);
+     //Pick minimum key vertex
+      u = minDistance(lowcost, visited,size);
+      temp = G;
 
-//       //Mark picked vertex as visited
-//       visited[get_pos(u)] = true;
+      //Find correct node from index u
+      for(j = 0; j < size; j++){
+         if(j == u)
+            break;
+         else
+            temp = ntail(temp);
+      }
 
-//       for(int v = 0; v < size; v++){
-//          if(adjmat[get_pos(u)][v] && visited[v] == false && adjmat[get_pos(u)][v] < lowcost[v]){
-//             lowcost[v] = adjmat[get_pos(u)][v];
-//             closest[v] = get_nname(u);
-//          }
+      //Mark picked vertex as visited
+      visited[u] = true;
 
-//       }
-//   }
+      for(int v = 0; v < size; v++){
+         if(adjmat[u][v] && visited[v] == false && adjmat[u][v] < lowcost[v]){
+            lowcost[v] = adjmat[u][v];
+            closest[v] = get_nname(temp);
+         }
 
-//    b_dispMST();
-//    b_sumMST();
+      }
+  }
+
+   b_dispMST();
+   b_sumMST();
    
 }                        
 

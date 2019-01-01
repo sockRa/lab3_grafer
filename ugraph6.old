@@ -156,19 +156,19 @@ MST sum is: 20000
 Prim + MST
 N:       a      b      c      d
 
-lc:      *      *      *      *
-cl:      c      c      *      c
+lc:      2      *      *      *
+cl:      b      c      *      c
 
-MST sum is: 29997
+MST sum is: 20000
 
  Enter choice ==>  x Enter node:  d
 Prim + MST
 N:       a      b      c      d
 
-lc:      *      *      *      *
-cl:      d      d      d      *
+lc:      2      *      *      *
+cl:      b      d      d      *
 
-MST sum is: 29997
+MST sum is: 20000
 
  Enter choice ==>  q
  *** BYE BYE! ***
