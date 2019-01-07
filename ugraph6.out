@@ -47,12 +47,16 @@
  --------------------
  
  Enter choice ==>  t Enter node:  a
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   2   *   * 
+ E:    *   a   a   a 
+ L:    *   2   *   * 
+ --------------------
 
-D:      *      2      *      *
-E:      *      a      a      a
-L:      *      2      *      *
  Enter choice ==>  v
  --------------------
  Floyd
@@ -66,12 +70,16 @@ L:      *      2      *      *
  --------------------
  
  Enter choice ==>  t Enter node:  b
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    2   *   *   * 
+ E:    b   *   b   b 
+ L:    2   *   *   * 
+ --------------------
 
-D:      2      *      *      *
-E:      b      *      b      b
-L:      2      *      *      *
  Enter choice ==>  v
  --------------------
  Floyd
@@ -85,12 +93,16 @@ L:      2      *      *      *
  --------------------
  
  Enter choice ==>  t Enter node:  c
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   *   *   * 
+ E:    c   c   *   c 
+ L:    *   *   *   * 
+ --------------------
 
-D:      *      *      *      *
-E:      c      c      *      c
-L:      *      *      *      *
  Enter choice ==>  v
  --------------------
  Floyd
@@ -104,12 +116,16 @@ L:      *      *      *      *
  --------------------
  
  Enter choice ==>  t Enter node:  d
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   *   *   * 
+ E:    d   d   d   * 
+ L:    *   *   *   * 
+ --------------------
 
-D:      *      *      *      *
-E:      d      d      d      *
-L:      *      *      *      *
  Enter choice ==>  v
  --------------------
  Floyd
@@ -135,41 +151,53 @@ L:      *      *      *      *
  --------------------
  
  Enter choice ==>  x Enter node:  a
-Prim + MST
-N:       a      b      c      d
-
-lc:      *      2      *      *
-cl:      *      a      a      a
-
-MST sum is: 2
-
+ --------------------
+ Prim + MST
+ --------------------
+       a   b   c   d 
+ --------------------
+ lc:   *   2   *   * 
+ cl:   *   a   a   a 
+ --------------------
+ MST sum is 2 
+ --------------------
+ 
  Enter choice ==>  x Enter node:  b
-Prim + MST
-N:       a      b      c      d
-
-lc:      2      *      *      *
-cl:      b      *      b      b
-
-MST sum is: 2
-
+ --------------------
+ Prim + MST
+ --------------------
+       a   b   c   d 
+ --------------------
+ lc:   2   *   *   * 
+ cl:   b   *   b   b 
+ --------------------
+ MST sum is 2 
+ --------------------
+ 
  Enter choice ==>  x Enter node:  c
-Prim + MST
-N:       a      b      c      d
-
-lc:      2      *      *      *
-cl:      b      c      *      c
-
-MST sum is: 2
-
+ --------------------
+ Prim + MST
+ --------------------
+       a   b   c   d 
+ --------------------
+ lc:   2   *   *   * 
+ cl:   b   c   *   c 
+ --------------------
+ MST sum is 2 
+ --------------------
+ 
  Enter choice ==>  x Enter node:  d
-Prim + MST
-N:       a      b      c      d
-
-lc:      2      *      *      *
-cl:      b      d      d      *
-
-MST sum is: 2
-
+ --------------------
+ Prim + MST
+ --------------------
+       a   b   c   d 
+ --------------------
+ lc:   2   *   *   * 
+ cl:   b   d   d   * 
+ --------------------
+ MST sum is 2 
+ --------------------
+ 
  Enter choice ==>  q
  *** BYE BYE! ***
  *** End of Graph program 

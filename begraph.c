@@ -336,42 +336,27 @@ int minDistance(int D[],bool sptSet[],int size){
 }
 
 static void b_dispSPT(){
+   int nodes = b_nsize(G), i;
 
-   int size = b_nsize(G),i;
-   
-   noderef temp = G;
-
-   printf("\n");
-   printf("Dijkstra + SPT\n");
-   printf("N:");
-
-   for(i = 0; i < size; i++){
-      printf("%7c",get_nname(temp));
-      temp = ntail(temp);
-   }
-   
-
-   printf("\n\nD:");
-
-   for(i = 0; i < size; i++){
+   b_mhead("Dijkstra + SPT");
+   printf("\n D:  ");
+   for (i = 0; i < nodes; i++) 
       if(D[i] == INFIN || D[i] == 0)
-         printf("%7s","*");
-      else
-         printf("%7d",D[i]);
-   }
+            printf("  * ");
+      else  printf(" %2d ", D[i]);
 
-   printf("\nE:");
-   for(i = 0; i < size; i++)
-      printf("%7c",E[i]);
-   
-   printf("\nL:");
-   for(i = 0; i < size; i++){
+   printf("\n E:  ");
+   for(i = 0; i < nodes; i++)
+      printf("  %c ", E[i]);
+   printf("\n L:  ");
+
+   for(i = 0; i < nodes; i++)
       if(L[i] == INFIN || L[i] == 0)
-         printf("%7s","*");
-      else
-         printf("%7d",L[i]);
-   }
+            printf("  * ");
+      else  printf(" %2d ", L[i]);
 
+   b_pline();
+   printf("\n");
 }
 
 static void b_Dijkstra(char a){
@@ -498,50 +483,29 @@ b_mdisp(Warshall,"Warshall");
 /****************************************************************************/
 /* Prim                                                                     */
 /****************************************************************************/
-
-static void b_dispMST(){ 
-   
-   int size = b_nsize(G),i;
-   
-   noderef temp = G;
-
-   printf("\n");
-   printf("Prim + MST\n");
-   printf("N: ");
-
-   for(i = 0; i < size; i++){
-      printf("%7c",get_nname(temp));
-      temp = ntail(temp);
-   }
-
-   printf("\n\nlc:");
-   for(i = 0; i < size; i++){
-      if(lowcost[i] == INFIN || lowcost[i] == 0)
-         printf("%7s","*");
-      else
-         printf("%7d",lowcost[i]);
-   }
-
-   printf("\ncl:");
-   for(i = 0; i < size; i++){
-      printf("%7c",closest[i]);
-   }
-}   
-static void b_sumMST(){
-
-   int count = 0;
-   int size = b_nsize(G);
-
-   for(int i = 0; i < size; i++){
-      if(lowcost[i] != INFIN)
-         count += lowcost[i];
-   }
-
-   printf("\n\nMST sum is: %d\n",count);
-
-   
+static void b_dispMST()  { 
+   int nodes = b_nsize(G), i;
+   b_mhead("Prim + MST");
+   printf("\n lc: ");
+   for (i = 0; i < nodes; i++) 
+      if (lowcost[i] == INFIN || lowcost[i] == 0)
+            printf("  * ");
+      else  printf(" %2d ", lowcost[i]);
+   printf("\n cl: ");
+   for(i = 0; i < nodes; i++)
+      printf("  %c ", closest[i]);
+   b_pline();
 }
 
+static void b_sumMST() {
+   int i, sum = 0, nodes = b_nsize(G);
+   for (i = 0; i < nodes; i++) 
+      if (lowcost[i] != INFIN)  
+            sum += lowcost[i];
+   printf("\n MST sum is %d ", sum);
+   b_pline();
+   printf("\n ");
+}
 
 static void b_Prim(char a){
 
@@ -553,7 +517,6 @@ static void b_Prim(char a){
    //Find source node
    noderef source = b_findn(a,G);
    noderef temp = NULLREF;
-   //noderef u = NULLREF;
 
    //Init all values
    for(i = 0; i < size; i++){
@@ -566,7 +529,6 @@ static void b_Prim(char a){
    nodeIndex = get_pos(source);
    lowcost[nodeIndex]   =  0;
    closest[nodeIndex]   =  '*';
-   //visited[nodeIndex]   =  true;
 
   for(i = 0; i < size - 1; i++){
 

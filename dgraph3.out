@@ -61,12 +61,16 @@
  --------------------
  
  Enter choice ==>  t Enter node:  a
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   1   2   2 
+ E:    *   a   a   b 
+ L:    *   1   2   1 
+ --------------------
 
-D:      *      1      2      2
-E:      *      a      a      b
-L:      *      1      2      1
  Enter choice ==>  v
  --------------------
  Floyd
@@ -80,12 +84,16 @@ L:      *      1      2      1
  --------------------
  
  Enter choice ==>  t Enter node:  b
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   *   *   1 
+ E:    b   *   b   b 
+ L:    *   *   *   1 
+ --------------------
 
-D:      *      *      *      1
-E:      b      *      b      b
-L:      *      *      *      1
  Enter choice ==>  v
  --------------------
  Floyd
@@ -99,12 +107,16 @@ L:      *      *      *      1
  --------------------
  
  Enter choice ==>  t Enter node:  c
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   *   *   3 
+ E:    c   c   *   c 
+ L:    *   *   *   3 
+ --------------------
 
-D:      *      *      *      3
-E:      c      c      *      c
-L:      *      *      *      3
  Enter choice ==>  v
  --------------------
  Floyd
@@ -118,12 +130,16 @@ L:      *      *      *      3
  --------------------
  
  Enter choice ==>  t Enter node:  d
-Dijkstra + SPT
-N:      a      b      c      d
+ --------------------
+ Dijkstra + SPT
+ --------------------
+       a   b   c   d 
+ --------------------
+ D:    *   *   *   * 
+ E:    d   d   d   * 
+ L:    *   *   *   * 
+ --------------------
 
-D:      *      *      *      *
-E:      d      d      d      *
-L:      *      *      *      *
  Enter choice ==>  v
  --------------------
  Floyd
